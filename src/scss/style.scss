@@ -20,6 +20,8 @@ $mobileSmall: em(479.98); // Телефоны S
 
 //base
 @import "base/null";
+//utils
+@import "utils/utils";
 
 //utils
 @import "utils/utils";
@@ -106,12 +108,11 @@ body {
 
 //layout
 @import "layout/header";
-
+@import "layout/footer";
 //pages
 @import "pages/home";
-
+@import "pages/home-dev";
 //themes
 
 //vendors
 @import "vendors/swiper";
-

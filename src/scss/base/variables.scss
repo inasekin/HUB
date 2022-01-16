@@ -1,8 +1,8 @@
 // Основные цвета
 $mainColor: #fff; // Цвет шрифта по умолчанию
-$secondaryColor: #FE9D2B;
-$redColor: #A80F32; // Основной красный цвет
-$secondRedColor: #CA1646; // Второй красный цвет
+$secondaryColor: #fe9d2b;
+$redColor: #a80f32; // Основной красный цвет
+$secondRedColor: #ca1646; // Второй красный цвет
 
 // Минимальная ширина страницы
 $minWidth: 320;
@@ -26,5 +26,4 @@ $responsiveType: 2;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
 //Прочее
-$transitionHover: all .3s;
-
+$transitionHover: all 0.3s;
