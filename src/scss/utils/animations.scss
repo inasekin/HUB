@@ -1,9 +1,9 @@
 //анимация первого фона
 @keyframes scroll {
   from {
-    background-position: 0 0;
+    background-position: center center;
   }
   to {
-    background-position: 100% 0;
+    background-position: 0 20%;
   }
 }
