@@ -1,1 +1,42 @@
 //утилитарные стили
+
+.h1 {
+    font-size: rem(86);
+    line-height: rem(70);
+}
+
+.h2 {
+    font-size: rem(72);
+    line-height: rem(72);
+}
+
+.h3 {
+    font-size: rem(48);
+    line-height: rem(52);
+}
+
+.h4 {
+    font-size: rem(36);
+    line-height: rem(40);
+}
+
+.montserrat-text-l {
+    font-family: $fontFamilyMontserrat;
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: rem(30);
+}
+
+.montserrat-text-m {
+    font-family: $fontFamilyMontserrat;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: rem(24);
+}
+
+.montserrat-text-s {
+    font-family: $fontFamilyMontserrat;
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: rem(24);
+}
