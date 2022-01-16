@@ -3,17 +3,15 @@
     background-size: cover;
     background-position: center;
     &__title {
-        padding: 120px 0px 60px 0px;
-        font-weight: normal;
-        color: #fff;
-        font-size: 64px;
+        padding: rem(120) 0 rem(60) 0;
+        color: $mainColor;
     }
     &__accordion-item {
         background: linear-gradient(177.99deg, #ca1646 1.69%, #6b0921 195.86%);
         box-shadow: 2px -1px 10px 7px rgba(73, 0, 16, 0.2);
-        border-radius: 30px;
-        padding: 30px 35px;
-        margin-bottom: 40px;
+        border-radius: rem(30);
+        padding: rem(30) rem(35);
+        margin-bottom: rem(40);
     }
 
     &__accordion-title {
@@ -23,29 +21,30 @@
         p {
             font-weight: bold;
             font-weight: normal;
-            font-size: 28px;
-            color: #fff;
-            margin-right: 20%;
+            font-size: rem(28);
+            color: $mainColor;
+            margin-right: 10%;
         }
 
         &::after {
-            content: "+";
+            content: "";
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M35 17.5L-9.53674e-07 17.5' stroke='white' stroke-width='10'/%3e%3cpath d='M17.5 35L17.5 -9.53674e-07' stroke='white' stroke-width='10'/%3e%3c/svg%3e ");
         }
 
         .is-open &::after {
-            content: "-";
+            content: "";
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='35' height='11' viewBox='0 0 35 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M35 5.5L-9.53674e-07 5.5' stroke='white' stroke-width='10'/%3e%3c/svg%3e ");
         }
         &::after,
         .is-open &::after {
+            width: rem(55);
+            height: rem(55);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
             display: flex;
-            font-size: 80px;
-            height: 55px;
-            width: 80px;
-            color: #fff;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            text-rendering: auto;
         }
     }
     &__accordion-body {
@@ -56,21 +55,20 @@
 
     &__accordion-content {
         p {
-            padding-top: 50px;
-            font-size: 18px;
-            color: #fff;
+            padding-top: rem(50);
+            color: $mainColor;
         }
         a {
-            margin-top: 50px;
+            margin-top: rem(50);
             display: block;
             width: fit-content;
-            color: #fff;
+            color: $mainColor;
             font-size: 20px;
-            border: 2px solid #ffffff;
-            border-radius: 80px;
+            border: 2px solid $mainColor;
+            border-radius: rem(80);
             text-align: left;
             text-decoration: none;
-            padding: 10px 25px;
+            padding: rem(10) rem(25);
         }
     }
 }
