@@ -8,7 +8,7 @@
 @import "base/variables";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "";
+$fontFamily: "Facundo", sans-serif;
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Брейк-поинты
@@ -21,6 +21,10 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
+  font-family: $fontFamily;
+  font-weight: 500;
+  font-size: rem(16);
+
   // Скролл заблокирован
   .lock & {
     overflow: hidden;
@@ -98,7 +102,6 @@ body {
 
 //layout
 @import "layout/header";
-@import "layout/navigation";
 
 //pages
 @import "pages/home";

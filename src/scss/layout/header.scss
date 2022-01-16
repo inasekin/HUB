@@ -1,0 +1,28 @@
+.header {
+
+  &__content {
+
+    .navigation {
+
+      &__list {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: rem(50);
+      }
+
+      &__item {
+        &:not(:first-child) {
+          margin-left: rem(32);
+        }
+      }
+
+      &__link {
+        transition: $transitionHover;
+
+        &:hover {
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
