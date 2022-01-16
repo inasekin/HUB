@@ -14,3 +14,7 @@ package-lock.json
 
 # Собранные файлы
 /dist
+
+# Версия редакции
+
+/gulp/version.json
