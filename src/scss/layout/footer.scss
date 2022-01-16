@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: rem(95) 0 rem(55) 0;
+    line-height: rem(15);
+    font-family: $fontFamilyMontserrat;
+    &__copyright {
+        color: $mainColor;
+        font-size: rem(12);
+        margin-bottom: rem(10);
+    }
+    &__info {
+        color: #868080;
+        font-size: rem(10);
+    }
+}
