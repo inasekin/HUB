@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/head.html',{
-	"title":"Главная"
-	})
-	<body>
-    <div class="hero-block" style="background-image: url(./img/hero-block.png); height: 850px;">
-      @@include('html/header.html',{})
-      <div class="__container">
-        <div class="hero-block__content">
-
-        </div>
+@@include('html/head.html',{
+"title":"Главная"
+})
+<body>
+<div class="hero-block" style="background-image: url(./img/hero-block.png); height: 850px;">
+  @@include('html/header.html',{})
+  <div class="__container">
+    <div class="hero-block__content">
+      <div class="hero-block__text montserrat-text-m">
+        Секс может быть разным, но одно всегда неизменно — если в сексуальной жизни возникают трудности, ты чувствуешь
+        себя уязвимым.
       </div>
+      <div class="hero-block__title">
+        <h1 class="h1">К счастью, у идеального секса есть рецепт</h1>
+      </div>
+      <a href="#" class="btn btn--large">Хочу узнать</a>
     </div>
-		<main>
-		</main>
-		@@include('html/footer.html',{})
-		<script src="js/app.min.js"></script>
-	</body>
+  </div>
+</div>
+<main>
+</main>
+@@include('html/footer.html',{})
+<script src="js/app.min.js"></script>
+</body>
 </html>
