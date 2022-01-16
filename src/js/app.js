@@ -1,5 +1,7 @@
 import * as flsFunctions from "./modules/functions.js";
+import {faqFunction} from "./modules/faq.js";
 
+faqFunction();
 flsFunctions.isWebp();
 
 /*
