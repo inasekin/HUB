@@ -3,18 +3,27 @@
 @@include('html/head.html',{
 "title":"Главная"
 })
-
 <body>
-	<div class="hero-block" style="background-image: url(./img/hero-block.png); height: 850px;">
-		@@include('html/header.html',{})
-		<div class="__container">
-			<div class="hero-block__content">
+<div class="hero-block" style="background-image: url(./img/hero-block.png); height: 850px;">
+  @@include('html/header.html',{})
+  <div class="__container">
+    <div class="hero-block__content">
+      <div class="hero-block__text montserrat-text-m">
+        <p>Секс может быть разным, но одно всегда неизменно — если в сексуальной жизни возникают трудности, ты чувствуешь
+          себя уязвимым.</p>
+      </div>
+      <div class="hero-block__title">
+        <h1 class="h1">К счастью, у идеального секса есть рецепт</h1>
+      </div>
+      <a href="#" class="btn btn--white btn--large">Хочу узнать</a>
+    </div>
+  </div>
+</div>
+<main>
+  <section style="height: 1000px">
 
-			</div>
-		</div>
-	</div>
-	<main>
-		<section class="faq-block" style="background-image: url(./img/faq-block.png);">
+  </section>
+  		<section class="faq-block" style="background-image: url(./img/faq-block.png);">
 			<div class="__container">
 				<div class="faq-block__title">
 					<h2 class="h2">FAQ</h2>
@@ -62,8 +71,7 @@
 				@@include('html/footer.html',{})
 			</div>
 		</section>
-	</main>
-	<script src="js/app.min.js"></script>
+</main>
+<script src="js/app.min.js"></script>
 </body>
-
 </html>

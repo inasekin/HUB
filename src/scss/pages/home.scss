@@ -1,0 +1,24 @@
+.hero-block {
+  background-attachment: fixed;
+  width: 100%;
+  animation: scroll linear 20s infinite;
+
+  &__content {
+    margin-top: rem(160);
+  }
+
+  &__text {
+    max-width: rem(444);
+    margin-bottom: rem(38);
+    margin-left: rem(8);
+  }
+
+  &__text.montserrat-text-m {
+    font-size: rem(16);
+  }
+
+  &__title {
+    max-width: rem(832);
+    margin-bottom: rem(75);
+  }
+}

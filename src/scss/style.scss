@@ -23,6 +23,10 @@ $mobileSmall: em(479.98); // Телефоны S
 //utils
 @import "utils/utils";
 
+//utils
+@import "utils/utils";
+@import "utils/animations";
+
 body {
   font-family: $fontFamily;
   font-weight: 500;
