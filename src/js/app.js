@@ -2,6 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 import {faqFunction} from "./modules/faq.js";
 import {preload, csaHead, images} from "./modules/showHero.js";
 import Swiper, { Navigation, Pagination } from 'swiper';
+import {reasonModal} from "./modules/reasonModal.js";
 
 faqFunction();
 
@@ -34,3 +35,5 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
     prevEl: '.slider__button-prev',
   },
 });
+
+reasonModal();
