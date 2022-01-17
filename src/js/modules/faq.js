@@ -32,4 +32,13 @@ export const faqFunction = () => {
             item.classList.add('is-open');
         }
     }
+    let faqLi = document.querySelectorAll(".specialist-block__advice-accordion li .specialist-block__advice-title");
+    let faqBtns = document.querySelectorAll(".plus-minus-toggle");
+
+    faqLi.forEach(function (item, i, arr) {
+        item.onclick = function () {
+            this.parentNode.classList.toggle("active");
+            faqBtns[i].classList.toggle("collapsed");
+        };
+    });
 }

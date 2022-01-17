@@ -202,3 +202,101 @@
     display: block;
     background-repeat: no-repeat;
 }
+
+.specialist-block {
+    &__content {
+        width: 75%;
+    }
+    &__text {
+        .h2 {
+            color: #fe9d2b;
+            margin-bottom: 40px;
+        }
+        p {
+            color: #34000d;
+            margin-bottom: 40px;
+        }
+    }
+    &__advice-accordion {
+        list-style: none;
+        li {
+            margin-bottom: 40px;
+            &.active {
+                .specialist-block__advice-descr {
+                    max-height: 275px !important;
+                    padding-bottom: 25px;
+                    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+                }
+                .specialist-block__advice-title {
+                    background-color: #fe9d2b;
+                    border-radius: 80px;
+                    color: $mainColor;
+                    transition: color 0.5s ease;
+                }
+                .plus-minus-toggle {
+                    &:before,
+                    &:after {
+                        background: $mainColor;
+                    }
+                }
+            }
+        }
+        .plus-minus-toggle {
+            cursor: pointer;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+            left: 15px;
+            top: 44%;
+            z-index: 2;
+
+            &:before,
+            &:after {
+                background: #fe9d2b;
+                content: "";
+                height: 6px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 30px;
+                transition: transform 500ms ease;
+            }
+
+            &:after {
+                transform-origin: center;
+            }
+
+            &.collapsed {
+                &:after {
+                    transform: rotate(90deg);
+                }
+
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &__advice-title {
+        color: #fe9d2b;
+        font-size: 36px;
+        font-weight: 400;
+        padding: 10px 60px;
+        position: relative;
+        cursor: pointer;
+        transition: color 0.5s ease;
+        margin-bottom: 25px;
+    }
+    &__advice-descr {
+        margin-left: 80px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+        p {
+            color: #34000d;
+        }
+        a {
+            color: #fe9d2b;
+        }
+    }
+}
