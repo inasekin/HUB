@@ -216,6 +216,7 @@
     &__text {
         position: relative;
         .h2 {
+            padding-top: rem(115);
             color: #fe9d2b;
             margin-bottom: rem(40);
         }
@@ -308,24 +309,69 @@
     }
     &__prodicut-1 {
         position: absolute;
-        width: rem(225);
-        top: 0;
+        top: 10%;
         right: 0;
-        height: rem(200);
+        img {
+            width: rem(260);
+            height: auto;
+        }
     }
     &__prodicut-2 {
         position: absolute;
-        width: rem(225);
-        top: 35%;
+        top: 40%;
         right: 0;
-        height: rem(200);
+        img {
+            width: rem(260);
+            height: auto;
+        }
     }
     &__prodicut-3 {
         position: absolute;
-        width: rem(225);
         top: 70%;
         right: 0;
-        height: rem(200);
+        img {
+            width: rem(260);
+            height: auto;
+        }
+    }
+}
+
+.resept-block {
+    &__card {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__card-content {
+        padding: 65px 0px 65px 0px;
+        width: 50%;
+    }
+    &__card-tag {
+        border: 1px solid #fe9d2b;
+        padding: 10px 20px;
+        border-radius: 80px;
+        background-color: #712019;
+        margin-bottom: 80px;
+        p {
+            color: #fe9d2b;
+            font-size: 16px;
+        }
+    }
+    &__card-text {
+        .h3 {
+            margin-bottom: 45px;
+        }
+        p {
+            margin-bottom: 80px;
+        }
+        a {
+            border: 2px solid #ffffff;
+            border-radius: 80px;
+            display: block;
+            padding: 15px 50px;
+            width: fit-content;
+            font-size: 28px;
+        }
     }
 }
 
