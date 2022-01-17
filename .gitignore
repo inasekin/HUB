@@ -16,5 +16,4 @@ package-lock.json
 /dist
 
 # Версия редакции
-
-/gulp/version.json
+gulp/version.json
