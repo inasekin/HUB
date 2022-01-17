@@ -36,4 +36,19 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
   },
 });
 
+const swiperModalReasons = new Swiper('.modal-reason__slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 1,
+  watchOverflow: true,
+  allowTouchMove: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-navigation__next',
+    prevEl: '.slider-navigation__prev',
+  },
+});
+
 reasonModal();
