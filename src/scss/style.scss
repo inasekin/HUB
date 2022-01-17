@@ -22,6 +22,7 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 //utils
 @import "utils/utils";
+@import "utils/common";
 
 //utils
 @import "utils/utils";
@@ -33,7 +34,7 @@ body {
   font-weight: 500;
 
   // Скролл заблокирован
-  .lock & {
+  .lock {
     overflow: hidden;
     touch-action: none;
   }
@@ -106,6 +107,7 @@ body {
 
 //components
 @import "components/btns";
+@import "components/modal";
 
 //layout
 @import "layout/header";
