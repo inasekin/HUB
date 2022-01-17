@@ -1,0 +1,98 @@
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.swiper-pagination-bullet {
+  width: 34px !important;
+  height: 34px !important;
+}
+
+.swiper-pagination {
+  position: unset !important;
+}
+
+.swiper-pagination-bullet {
+  background: #811228 !important;
+  opacity: unset !important;
+}
+
+.slider__navigation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.slider__button-prev {
+  position: absolute;
+  left: rem(190);
+  bottom: rem(280);
+
+  @media (max-width: 1600px) {
+    left: rem(100);
+  }
+
+  @media (max-width: 1440px) {
+    left: rem(50);
+  }
+
+  @media (max-width: 1320px) {
+    left: rem(20);
+  }
+
+  & svg {
+    transform: rotate(180deg);
+    stroke: $mainColor;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.slider__button-next {
+  position: absolute;
+  right: rem(200);
+  bottom: rem(280);
+
+  @media (max-width: 1600px) {
+    right: rem(110);
+  }
+
+  @media (max-width: 1440px) {
+    right: rem(60);
+  }
+
+  @media (max-width: 1320px) {
+    right: rem(30);
+  }
+
+  & svg {
+    stroke: $mainColor;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.slider__button-prev.swiper-button-disabled {
+
+  & svg {
+    stroke: $secondRedColor;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.slider__button-next.swiper-button-disabled {
+
+  & svg {
+    stroke: $secondRedColor;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
