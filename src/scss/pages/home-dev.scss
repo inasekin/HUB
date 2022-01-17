@@ -328,3 +328,31 @@
         height: rem(200);
     }
 }
+
+.btn-find {
+    background: $secondRedColor;
+    border: 2px solid #fe9d2b;
+    border-radius: rem(200);
+    cursor: pointer;
+    height: rem(65);
+    width: rem(270);
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 999;
+    svg {
+        bottom: 0;
+        position: absolute;
+    }
+    a {
+        display: block;
+        font-size: rem(20);
+        margin-left: rem(100);
+        margin-top: rem(10);
+        svg {
+            position: relative;
+            top: 5px;
+            left: rem(10);
+        }
+    }
+}
