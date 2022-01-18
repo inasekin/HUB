@@ -217,7 +217,7 @@
         position: relative;
         .h2 {
             padding-top: rem(115);
-            color: #fe9d2b;
+            color: $secondaryColor;
             margin-bottom: rem(40);
         }
         p {
@@ -236,7 +236,7 @@
                     transition: max-height 0.5s ease, padding-bottom 0.5s ease;
                 }
                 .specialist-block__advice-title {
-                    background-color: #fe9d2b;
+                    background-color: $secondaryColor;
                     border-radius: rem(80);
                     color: $mainColor;
                     transition: color 0.5s ease;
@@ -260,7 +260,7 @@
 
             &:before,
             &:after {
-                background: #fe9d2b;
+                background: $secondaryColor;
                 content: "";
                 height: rem(6);
                 left: 0;
@@ -286,7 +286,7 @@
         }
     }
     &__advice-title {
-        color: #fe9d2b;
+        color: $secondaryColor;
         font-size: rem(36);
         font-weight: 400;
         padding: rem(10) rem(60);
@@ -304,7 +304,7 @@
             color: #34000d;
         }
         a {
-            color: #fe9d2b;
+            color: $secondaryColor;
         }
     }
     &__prodicut-1 {
@@ -318,7 +318,7 @@
     }
     &__prodicut-2 {
         position: absolute;
-        top: 40%;
+        top: 43%;
         right: 0;
         img {
             width: rem(260);
@@ -327,7 +327,7 @@
     }
     &__prodicut-3 {
         position: absolute;
-        top: 70%;
+        top: 75%;
         right: 0;
         img {
             width: rem(260);
@@ -338,6 +338,7 @@
 
 .resept-block {
     &__card {
+        background: linear-gradient(to bottom, 0deg, #6b0921 0%, rgba(164, 0, 41, 0) 97.49%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -347,25 +348,40 @@
         width: 50%;
     }
     &__card-tag {
-        border: 1px solid #fe9d2b;
+        border: 1px solid $secondaryColor;
         padding: 10px 20px;
         border-radius: 80px;
         background-color: #712019;
         margin-bottom: 80px;
+        display: inline-flex;
         p {
-            color: #fe9d2b;
+            color: $secondaryColor;
             font-size: 16px;
+        }
+        svg {
+            margin-right: 15px;
         }
     }
     &__card-text {
         .h3 {
             margin-bottom: 45px;
         }
+        .hide-block {
+            opacity: 0;
+            transition: 1s;
+            overflow: hidden;
+            height: 0;
+        }
+        .btn-card-text-show:hover ~ .hide-block {
+            opacity: 1;
+            transition: 1s;
+            height: rem(260);
+        }
         p {
             margin-bottom: 80px;
         }
-        a {
-            border: 2px solid #ffffff;
+        .btn-card-text-read {
+            border: 2px solid $mainColor;
             border-radius: 80px;
             display: block;
             padding: 15px 50px;
@@ -377,8 +393,8 @@
 
 .btn-find {
     background: $secondRedColor;
-    border: 2px solid #fe9d2b;
-    border-radius: rem(200);
+    border: 2px solid $secondaryColor;
+    border-radius: 200px;
     cursor: pointer;
     height: rem(65);
     width: rem(270);
@@ -392,13 +408,13 @@
     }
     a {
         display: block;
-        font-size: rem(20);
-        margin-left: rem(100);
-        margin-top: rem(10);
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 10px;
         svg {
             position: relative;
             top: 5px;
-            left: rem(10);
+            left: 10px;
         }
     }
 }
