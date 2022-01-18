@@ -82,7 +82,6 @@
 .solutions-block {
   position: relative;
   background: linear-gradient(104.31deg, #ffc84e -9.21%, #ffc84e 99.34%);
-
   &__nav {
     padding-top: rem(50);
     text-align: right;
@@ -276,6 +275,12 @@
 
 .specialist-block {
   position: relative;
+  background-image: url(../img/specialist.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: scroll linear 40s infinite;
 
   &__content {
     position: relative;
@@ -283,7 +288,7 @@
 
   &__text,
   &__advice {
-    width: 75%;
+    width: rem(815);
     position: relative;
   }
 
@@ -306,7 +311,10 @@
     list-style: none;
 
     li {
-      margin-bottom: rem(40);
+
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
 
       &.active {
         .specialist-block__advice-descr {
@@ -397,25 +405,49 @@
   &__prodicut-1 {
     position: absolute;
     width: rem(225);
-    top: 0;
+    top: rem(80);
     right: 0;
     height: rem(200);
+    transition: $transitionHover;
+
+    animation: do-levitation 1.6s alternate ease-in-out infinite;
+
+    &:hover {
+      animation: none;
+      transform: scale(1.1);
+    }
   }
 
   &__prodicut-2 {
     position: absolute;
     width: rem(225);
-    top: 35%;
+    top: 41%;
     right: 0;
     height: rem(200);
+    transition: $transitionHover;
+
+    animation: do-levitation 1.4s alternate ease-in-out infinite;
+
+    &:hover {
+      animation: none;
+      transform: scale(1.1);
+    }
   }
 
   &__prodicut-3 {
     position: absolute;
     width: rem(225);
-    top: 70%;
+    top: 73%;
     right: 0;
     height: rem(200);
+    transition: $transitionHover;
+
+    animation: do-levitation 1.7s alternate ease-in-out infinite;
+
+    &:hover {
+      animation: none;
+      transform: scale(1.1);
+    }
   }
 }
 
