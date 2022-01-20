@@ -3,10 +3,30 @@ import {faqFunction} from "./modules/faq.js";
 import {preload, csaHead, images} from "./modules/showHero.js";
 import Swiper, { Navigation, Pagination } from 'swiper';
 import {reasonModal} from "./modules/reasonModal.js";
+import {burgerOpen, quit} from "./modules/burgerMenu.js";
 
 faqFunction();
 
 flsFunctions.isWebp();
+
+const mobileMenu = document.querySelector('.menu__burger');
+const mobileMenuQuit = document.querySelector('.menu__quit');
+const heroBlockText = document.querySelector('.hero-block__text');
+const heroBlock = document.querySelector('.hero-block');
+const heroBlockTitle = document.querySelector('.hero-block__title');
+
+setInterval(() => {
+  if (heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-2.png");' || heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-3.png");') {
+    heroBlockText.classList.add('hidden');
+    heroBlockTitle.classList.add('mt-100');
+  } else {
+    heroBlockText.classList.remove('hidden');
+    heroBlockTitle.classList.remove('mt-100');
+  }
+}, 5500);
+
+mobileMenu.addEventListener('click', burgerOpen);
+mobileMenuQuit.addEventListener('click', quit);
 
 preload(images.slice(0), function() {
   requestAnimationFrame(csaHead);

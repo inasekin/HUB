@@ -99,7 +99,7 @@ body {
     @media (max-width: $mobile) {
       max-width: none;
       @if ($containerPadding>0 and $maxWidthContainer>0) {
-        padding: 0 rem(math.div($containerPadding, 2));
+        padding: 0 rem($containerPadding);
       }
     }
   }
@@ -108,6 +108,7 @@ body {
 //components
 @import "components/btns";
 @import "components/modal";
+@import "components/menu-burger";
 
 //layout
 @import "layout/header";

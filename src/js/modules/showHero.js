@@ -1,14 +1,21 @@
 const heroBlockEl = document.querySelector('.hero-block');
 let timeStamp = performance.now();
 let index = 1;
+const screenWidth = window.screen.width;
+export let images = [];
 
-export const images = [
-  './img/hero-block.png',
-  './img/hero-block-1.png',
-  './img/hero-block-2.png'
-];
+if (screenWidth >= 568) {
+  images[0] = './img/hero-block.png';
+  images[1] = './img/hero-block-1.png';
+  images[2] = './img/hero-block-2.png';
+} else {
+  images[0] = './img/hero-block-mobile-1.png';
+  images[1] = './img/hero-block-mobile-2.png';
+  images[2] = './img/hero-block-mobile-3.png';
+}
 
 export const csaHead = (arg) => {
+
   if(arg - timeStamp > 5000) {
     timeStamp = arg;
 

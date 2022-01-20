@@ -3,6 +3,20 @@
 .h1 {
   font-size: rem(86);
   line-height: rem(70);
+
+  @media (max-width: 1024px) {
+    font-size: rem(72);
+    line-height: rem(72);
+  }
+
+  @media (max-width: 768px) {
+    font-size: rem(70);
+  }
+
+  @media (max-width: 568px) {
+    font-size: rem(38);
+    line-height: rem(38);
+  }
 }
 
 .h2 {
@@ -32,6 +46,16 @@
   font-weight: 500;
   font-size: rem(18);
   line-height: rem(24);
+
+  @media (max-width: 1024px) {
+    font-size: rem(14);
+    line-height: rem(22);
+  }
+
+  @media (max-width: 568px) {
+    font-size: rem(12);
+    line-height: rem(18);
+  }
 }
 
 .montserrat-text-s {
@@ -47,4 +71,8 @@
 
 .lock {
   overflow: hidden;
+}
+
+.mt-100 {
+  margin-top: rem(100);
 }

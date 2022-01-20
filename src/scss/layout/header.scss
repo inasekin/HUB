@@ -4,10 +4,23 @@
 
     .navigation {
 
+      @media (max-width: 568px) {
+        display: none;
+      }
+
       &__list {
         display: flex;
         justify-content: flex-end;
         padding-top: rem(50);
+
+        @media (max-width: 768px) {
+          justify-content: flex-start;
+          margin-left: rem(55);
+        }
+
+        @media (max-width: 620px) {
+          margin-left: 0;
+        }
       }
 
       &__item {

@@ -39,6 +39,19 @@
     line-height: rem(40);
 
     padding-top: rem(8);
+
+    @media (max-width: 768px) {
+      width: rem(209);
+      height: unset;
+
+      font-size: rem(18);
+      line-height: rem(40);
+
+      padding-top: 0;
+    }
+    @media (max-width: 768px) {
+      width: rem(183);
+    }
   }
 
   &--medium {
