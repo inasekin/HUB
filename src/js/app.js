@@ -4,6 +4,7 @@ import {preload, csaHead, images} from "./modules/showHero.js";
 import Swiper, { Navigation, Pagination } from 'swiper';
 import {reasonModal} from "./modules/reasonModal.js";
 import {burgerOpen, quit} from "./modules/burgerMenu.js";
+import {ageLimitModal} from "./modules/ageLimitModal.js";
 
 faqFunction();
 
@@ -72,3 +73,4 @@ const swiperModalReasons = new Swiper('.modal-reason__slider', {
 });
 
 reasonModal();
+ageLimitModal();

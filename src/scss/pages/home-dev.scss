@@ -449,6 +449,82 @@
       transform: scale(1.1);
     }
   }
+
+  &__age-limit {
+    width: 100vw;
+    height: 100%;
+    background-image: url(../img/age-limit.png);
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    animation: scroll linear 40s infinite;
+    z-index: 10;
+
+    .age-limit {
+
+      &__modal {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) -9.03%, rgba(255, 255, 255, 0) 158.61%);
+        border-radius: 80px;
+        padding: rem(60);
+        max-width: rem(635);
+        height: rem(475);
+        display: block;
+        margin: rem(208) auto 0 auto;
+      }
+
+      &__notification {
+        font-size: rem(36);
+        line-height: rem(40);
+        text-align: center;
+        margin-top: rem(65);
+        margin-bottom: rem(73);
+      }
+
+      &__choice {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__no {
+        display: block;
+        border: 2px solid $secondRedColor;
+        border-radius: 80px;
+        width: rem(220);
+        text-align: center;
+        font-size: rem(32);
+        line-height: rem(40);
+        color: $secondRedColor;
+        padding-top: 9px;
+        padding-bottom: 6px;
+        transition: $transitionHover;
+
+        &:hover {
+          background-color: $secondRedColor;
+          color: #e5e5e5;
+        }
+      }
+
+      &__yes {
+        display: block;
+        border: 2px solid $mainColor;
+        background-color: $mainColor;
+        border-radius: 80px;
+        width: rem(220);
+        text-align: center;
+        font-size: rem(32);
+        line-height: rem(40);
+        color: #ABABAB;
+        padding-top: 9px;
+        padding-bottom: 6px;
+
+        &:hover {
+          background-color: unset;
+          color: $mainColor;
+        }
+      }
+    }
+  }
 }
 
 .resept-block {
