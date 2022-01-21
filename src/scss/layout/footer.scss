@@ -25,14 +25,16 @@
         padding: rem(35) 0 rem(15) 0;
     }
 }
-@media (max-width: 368px) {
+@media (max-width: 414px) {
     .footer {
+        width: 91%;
         padding: rem(15) 0 rem(15) 0;
         &__copyright {
-            font-size: rem(10);
+            font-size: rem(8);
         }
         &__info {
             font-size: rem(8);
+            line-height: 10px;
         }
     }
 }
