@@ -7,13 +7,30 @@
     padding: rem(120) 0 rem(60) 0;
     color: $mainColor;
   }
-
+  @media (max-width: 368px) {
+    &__title {
+      padding: rem(60) 0 rem(30) 0;
+      h2 {
+        font-size: rem(45);
+      }
+    }
+  }
   &__accordion-item {
     background: linear-gradient(177.99deg, #ca1646 1.69%, #6b0921 195.86%);
     box-shadow: 2px -1px 10px 7px rgba(73, 0, 16, 0.2);
     border-radius: rem(30);
     padding: rem(30) rem(35);
     margin-bottom: rem(40);
+  }
+  @media (max-width: 768px) {
+    &__accordion-item {
+      padding: rem(25) rem(25);
+    }
+  }
+  @media (max-width: 568px) {
+    &__accordion-item {
+      padding: rem(20) rem(20);
+    }
   }
 
   &__accordion-title {
@@ -27,6 +44,21 @@
       font-size: rem(28);
       color: $mainColor;
       margin-right: 10%;
+    }
+    @media (max-width: 768px) {
+      p {
+        font-size: rem(24);
+      }
+    }
+    @media (max-width: 568px) {
+      p {
+        font-size: rem(22);
+      }
+    }
+    @media (max-width: 368px) {
+      p {
+        font-size: rem(16);
+      }
     }
 
     &::after {
@@ -75,6 +107,23 @@
       text-align: left;
       text-decoration: none;
       padding: rem(10) rem(25);
+    }
+    @media (max-width: 568px) {
+      p {
+        font-size: rem(16);
+      }
+    }
+    @media (max-width: 568px) {
+      a,
+      p {
+        font-size: rem(12);
+      }
+      a {
+        margin-top: rem(25);
+      }
+      p {
+        padding-top: rem(25);
+      }
     }
   }
 }
@@ -462,7 +511,6 @@
     z-index: 10;
 
     .age-limit {
-
       &__modal {
         background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) -9.03%, rgba(255, 255, 255, 0) 158.61%);
         border-radius: 80px;
@@ -514,7 +562,7 @@
         text-align: center;
         font-size: rem(32);
         line-height: rem(40);
-        color: #ABABAB;
+        color: #ababab;
         padding-top: 9px;
         padding-bottom: 6px;
 
@@ -593,6 +641,7 @@
   right: 5%;
   bottom: 5%;
   z-index: 999;
+  display: none !important;
 
   svg {
     bottom: 0;
