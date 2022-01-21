@@ -15,3 +15,24 @@
         font-size: rem(10);
     }
 }
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+    }
+}
+@media (max-width: 568px) {
+    .footer {
+        padding: rem(35) 0 rem(15) 0;
+    }
+}
+@media (max-width: 368px) {
+    .footer {
+        padding: rem(15) 0 rem(15) 0;
+        &__copyright {
+            font-size: rem(10);
+        }
+        &__info {
+            font-size: rem(8);
+        }
+    }
+}
