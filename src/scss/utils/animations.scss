@@ -8,6 +8,15 @@
   }
 }
 
+@keyframes scroll-article {
+  from {
+    background-position-y: -180px;
+  }
+  to {
+    background-position-y: -30px;
+  }
+}
+
 
 
 @keyframes do-levitation {

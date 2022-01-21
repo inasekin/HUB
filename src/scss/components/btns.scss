@@ -24,7 +24,7 @@
     transition: $transitionHover;
 
     &:hover {
-      color: #ABABAB;
+      color: $mainColor;
       border: 2px solid $redColor;
       background: $redColor;
       cursor: pointer;

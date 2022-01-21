@@ -1,0 +1,138 @@
+.fullsize-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+
+  .recipe-article {
+
+    &__content {
+      background-color: $mainColor;
+    }
+
+    &__header {
+      height: 45vh;
+      background-size: cover;
+      padding-left: 20%;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position-y: -180px;
+      animation: scroll-article linear 60s infinite;
+
+      .tag {
+        border: 1px solid $secondaryColor;
+        padding: rem(10) rem(20);
+        border-radius: 80px;
+        background-color: rgb(254, 157, 43, 0.2);
+        display: inline-flex;
+        align-items: center;
+        color: $secondaryColor;
+        font-size: rem(16);
+
+        svg {
+          margin-right: rem(15);
+        }
+      }
+
+      .title {
+        font-size: rem(64);
+        line-height: rem(70);
+        width: rem(725);
+        margin-top: rem(17);
+      }
+    }
+
+    &__text-block {
+      position: absolute;
+      bottom: rem(55);
+    }
+
+    &__text {
+      height: 60vh;
+      padding-left: 20%;
+
+      .article-content {
+        height: rem(450);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scrollbar-color: #a3012d #e2d1d6; /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: auto; /* толщина */
+        display: flex;
+        width: 100%;
+        padding-top: rem(50);
+        box-shadow:  inset 0 0 8px 10px white;
+
+        &__introduction {
+          color: #34000D;
+          margin-bottom: rem(60);
+        }
+
+        &__text {
+          width: rem(920);
+        }
+
+        &__illustrations {
+
+          svg {
+            display: block;
+          }
+        }
+
+        &__row {
+          margin-bottom: rem(54);
+          .row-content {
+
+            &__title {
+              font-size: rem(36);
+              line-height: rem(40);
+              color: $secondRedColor;
+            }
+
+            &__text {
+              margin-top: rem(30);
+              margin-left: rem(95);
+              font-size: rem(18);
+              line-height: rem(24);
+              color: #34000D;
+            }
+
+            &__actions {
+              margin-top: rem(30);
+              margin-left: rem(95);
+              .action {
+                &:not(:last-child) {
+                  margin-bottom: rem(30);
+                }
+
+                &__title {
+                  color: #34000D;
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: rem(12);
+
+                  svg {
+                    margin-right: rem(16);
+                  }
+                }
+
+                &__text {
+                  color: #34000D;
+                  font-family: $fontFamilyMontserrat;
+                  font-weight: 400;
+                  font-size: rem(18);
+                  line-height: rem(24);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#closeFullSizeModal {
+  margin-top: rem(50);
+}
