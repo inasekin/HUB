@@ -1020,7 +1020,7 @@
     &__card-text {
       .btn-card-text-show:hover ~ .hide-block {
         opacity: 1;
-        transition: 1s;
+        transition: all .05s;
         height: rem(190);
       }
       .h3 {
@@ -1034,6 +1034,7 @@
       .btn-card-text-read {
         padding: rem(5) rem(40);
         font-size: rem(18);
+        margin-bottom: rem(20);
       }
     }
   }
