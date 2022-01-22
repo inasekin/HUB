@@ -64,6 +64,7 @@ export const regulations = {
                 <div class="row-content__text montserrat-text-l">
                   С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете гораздо лучше друг-друга понимать.
                 </div>
+                <div class="mobile-icons"></div>
                 <div class="row-content__actions">
                   <div class="action">
                     <div class="action__title montserrat-text-l">
@@ -1401,4 +1402,99 @@ export const illustrations = {
 </defs>
 </svg>
 `,
+}
+
+export const mobileIllustrations = {
+  mobileIllustration1: `<svg width="194" height="169" viewBox="0 0 194 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<circle cx="163.909" cy="106.261" r="12.3939" transform="rotate(23.5436 163.909 106.261)" stroke="#FE9D2B" stroke-width="6"/>
+<path d="M158.824 118.473L150.943 136.56" stroke="#FE9D2B" stroke-width="6"/>
+<path d="M161.721 129.195L149 123.652" stroke="#FE9D2B" stroke-width="6"/>
+</g>
+<g opacity="0.64">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M138.778 130.714C168.911 118.788 183.67 84.6921 171.743 54.5596C159.816 24.4271 125.721 9.66825 95.5884 21.5948C88.3321 24.4669 81.9673 28.6246 76.652 33.7029C69.3014 33.6381 61.8158 34.9627 54.5599 37.8346C24.4274 49.7611 9.66856 83.8567 21.5951 113.989C33.5216 144.122 67.6172 158.881 97.7497 146.954C105.006 144.082 111.371 139.924 116.686 134.846C124.037 134.911 131.522 133.586 138.778 130.714Z" fill="url(#paint0_linear_499_9990)"/>
+<g style="mix-blend-mode:multiply">
+<path d="M124.718 73.6165C133.201 95.0487 112.798 123.22 112.798 123.22C112.798 123.22 78.6415 116.644 70.1586 95.2114C61.6756 73.7791 82.0787 45.6073 82.0787 45.6073C82.0787 45.6073 116.235 52.1842 124.718 73.6165Z" fill="url(#paint1_linear_499_9990)"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<path d="M87.0013 106.322C81.8779 93.3779 93.862 76.4973 93.862 76.4973C93.862 76.4973 114.153 80.6035 119.276 93.5477C124.399 106.492 112.415 123.373 112.415 123.373C112.415 123.373 92.1247 119.266 87.0013 106.322Z" fill="url(#paint2_linear_499_9990)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_499_9990" x1="95.5885" y1="21.5948" x2="138.778" y2="130.715" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE9D2B"/>
+<stop offset="1" stop-color="#F9E2AF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_499_9990" x1="82.0787" y1="45.6073" x2="105.676" y2="104.537" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE9D2B"/>
+<stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_499_9990" x1="112.415" y1="123.373" x2="98.1607" y2="87.7824" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A3022E" stop-opacity="0.59"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
+<svg width="108" height="127" viewBox="0 0 108 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.64">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.8198 110.929C64.2094 119.503 83.6355 113.977 92.2093 98.5877C100.783 83.1981 95.2578 63.7719 79.8682 55.1981C76.1624 53.1335 72.2224 51.8865 68.2563 51.3978C65.7536 48.2827 62.6198 45.5889 58.914 43.5244C43.5245 34.9506 24.0983 40.4759 15.5245 55.8655C6.95071 71.255 12.476 90.6812 27.8656 99.255C31.5715 101.32 35.5114 102.567 39.4775 103.055C41.9803 106.17 45.114 108.864 48.8198 110.929Z" fill="url(#paint0_linear_499_9989)"/>
+<g style="mix-blend-mode:multiply">
+<path d="M68.0051 85.3605C61.9068 96.3066 43.0305 97.4181 43.0305 97.4181C43.0305 97.4181 34.0415 80.7824 40.1398 69.8363C46.238 58.8902 65.1143 57.7787 65.1143 57.7787C65.1143 57.7787 74.1033 74.4144 68.0051 85.3605Z" fill="url(#paint1_linear_499_9989)"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<path d="M41.2613 80.7467C44.9444 74.1357 56.172 73.3681 56.172 73.3681C56.172 73.3681 61.4281 83.3191 57.745 89.9301C54.0619 96.5411 42.8343 97.3087 42.8343 97.3087C42.8343 97.3087 37.5782 87.3578 41.2613 80.7467Z" fill="url(#paint2_linear_499_9989)"/>
+</g>
+</g>
+<g opacity="0.8">
+<circle r="19.5916" transform="matrix(0.0346507 0.999399 0.999399 -0.0346507 40.3935 35.9792)" stroke="#FE9D2B" stroke-width="7"/>
+<path d="M28.8771 4.16069L11 4.78052L11.6086 22.3326" stroke="#FE9D2B" stroke-width="7"/>
+<path d="M11.3242 4.76929L28.5435 22.7217" stroke="#FE9D2B" stroke-width="7"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_499_9989" x1="79.8685" y1="55.1982" x2="48.8199" y2="110.929" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE9D2B"/>
+<stop offset="1" stop-color="#F9E2AF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_499_9989" x1="65.1143" y1="57.7787" x2="48.4404" y2="87.9906" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE9D2B"/>
+<stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_499_9989" x1="42.8343" y1="97.3087" x2="52.9032" y2="79.0611" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A3022E" stop-opacity="0.59"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
+<svg width="174" height="164" viewBox="0 0 174 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.64">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M131.282 113.198C154.65 97.416 160.799 65.6787 145.017 42.311C129.234 18.9433 97.4971 12.7941 74.1294 28.5763C68.5021 32.3769 63.8733 37.1028 60.3089 42.4143C54.0507 43.737 47.9382 46.2657 42.3111 50.0662C18.9434 65.8485 12.7942 97.5858 28.5764 120.954C44.3587 144.321 76.096 150.47 99.4637 134.688C105.091 130.888 109.72 126.162 113.284 120.85C119.542 119.527 125.655 116.999 131.282 113.198Z" fill="url(#paint0_linear_431_9849)"/>
+<g style="mix-blend-mode:multiply">
+<path d="M108.632 67.3182C119.858 83.9389 107.802 111.701 107.802 111.701C107.802 111.701 77.5469 112.515 66.3215 95.8945C55.0961 79.2738 67.1516 51.5119 67.1516 51.5119C67.1516 51.5119 97.4071 50.6975 108.632 67.3182Z" fill="url(#paint1_linear_431_9849)"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<path d="M82.7148 102.178C75.9351 92.1402 82.9536 75.5504 82.9536 75.5504C82.9536 75.5504 100.964 75.2359 107.744 85.2741C114.524 95.3124 107.505 111.902 107.505 111.902C107.505 111.902 89.4945 112.217 82.7148 102.178Z" fill="url(#paint2_linear_431_9849)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_431_9849" x1="74.1292" y1="28.5764" x2="131.282" y2="113.199" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE9D2B"/>
+<stop offset="1" stop-color="#F9E2AF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_431_9849" x1="67.1516" y1="51.5119" x2="98.2483" y2="97.1609" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE9D2B"/>
+<stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_431_9849" x1="107.505" y1="111.902" x2="88.7215" y2="84.3335" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A3022E" stop-opacity="0.59"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>
+`,
+  mobileIllustration2: ``,
+  mobileIllustration3: ``,
+  mobileIllustration4: ``,
+  mobileIllustration5: ``,
+  mobileIllustration6: ``,
+  mobileIllustration7: ``,
 }

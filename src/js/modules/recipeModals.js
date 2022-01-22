@@ -3,7 +3,8 @@ import {introductions,
         tags,
         titles,
         backgrounds,
-        illustrations
+        illustrations,
+        mobileIllustrations
 } from '../utils/data.js';
 
 export const recipeModals = () => {
@@ -31,9 +32,28 @@ export const recipeModals = () => {
   const openFullSizeModal = (evt) => {
     evt.preventDefault();
     fullsizeModal.classList.remove('hidden');
+
     document.body.classList.add('lock');
 
-    console.log(evt.target.dataset.id);
+    setTimeout(() => {
+      const mobileIcons = document.querySelector('.mobile-icons');
+
+      if (evt.target.dataset.id === '1') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration1}`;
+      } else if (evt.target.dataset.id === '2') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration2}`;
+      } else if (evt.target.dataset.id === '3') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration3}`;
+      } else if (evt.target.dataset.id === '4') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration4}`;
+      } else if (evt.target.dataset.id === '5') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration5}`;
+      } else if (evt.target.dataset.id === '6') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration6}`;
+      } else if (evt.target.dataset.id === '7') {
+        mobileIcons.innerHTML = `${mobileIllustrations.mobileIllustration7}`;
+      }
+    }, 1000)
 
     switch (evt.target.dataset.id) {
       case "1":
