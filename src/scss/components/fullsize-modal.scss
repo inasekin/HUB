@@ -135,6 +135,10 @@
           background: linear-gradient(180deg, #FFFFFF 19.12%, rgba(255, 255, 255, 0) 83.82%);
           top: 0;
           mix-blend-mode: normal;
+
+          @media (max-width: 768px) {
+            height: 30px;
+          }
         }
 
         &::after {
@@ -144,8 +148,13 @@
           height: 100px;
           position: absolute;
           background: linear-gradient(180deg, rgba(255, 255, 255, 0) 57.31%, #FFFFFF 71.64%);
-          bottom: 155px;
+          bottom: rem(155);
           mix-blend-mode: normal;
+
+          @media (max-width: 768px) {
+            bottom: rem(155);
+            height: 30px;
+          }
         }
 
         @media (max-width: 1800px) {
@@ -315,7 +324,11 @@
 }
 
 #closeFullSizeModal {
-  margin-top: rem(50);
+  margin-top: rem(100);
+
+  @media (max-width: 1440px) {
+    margin-top: rem(70);
+  }
 
   @media (max-width: 768px) {
     font-size: rem(14);

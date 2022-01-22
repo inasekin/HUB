@@ -19,13 +19,13 @@ export const titles = [
 ];
 
 export const backgrounds = [
-  '../img/article-1.png',
-  '../img/article-2.png',
-  '../img/article-3.png',
-  '../img/article-4.png',
-  '../img/article-5.png',
-  '../img/article-6.png',
-  '../img/article-7.png'
+  './img/article-1.png',
+  './img/article-2.png',
+  './img/article-3.png',
+  './img/article-4.png',
+  './img/article-5.png',
+  './img/article-6.png',
+  './img/article-7.png'
 ];
 
 export const introductions = {
