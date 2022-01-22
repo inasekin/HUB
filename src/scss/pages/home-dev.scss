@@ -779,6 +779,9 @@
   &__advice {
     width: rem(815);
     position: relative;
+    @media (max-width: 1148px) {
+      width: 60%;
+    }
   }
 
   &__text {
@@ -788,11 +791,17 @@
       color: #fe9d2b;
       margin-bottom: rem(40);
       padding-top: rem(116);
+      @media (max-width: 1024px) {
+        font-size: rem(62);
+      }
     }
 
     p {
       color: #34000d;
       margin-bottom: rem(40);
+      @media (max-width: 1024px) {
+        font-size: rem(18);
+      }
     }
   }
 
@@ -846,6 +855,10 @@
         top: 0;
         width: rem(30);
         transition: transform 500ms ease;
+        @media (max-width: 1024px) {
+          width: rem(25);
+          height: rem(5);
+        }
       }
 
       &:after {
@@ -873,6 +886,9 @@
     cursor: pointer;
     transition: color 0.5s ease;
     margin-bottom: rem(25);
+    @media (max-width: 1024px) {
+      font-size: rem(24);
+    }
   }
 
   &__advice-descr {
@@ -937,6 +953,13 @@
       transform: scale(1.1);
     }
   }
+  @media (max-width: 1024px) {
+    &__prodicut-1,
+    &__prodicut-2,
+    &__prodicut-3 {
+      width: rem(200);
+    }
+  }
 
   &__age-limit {
     width: 100%;
@@ -959,6 +982,17 @@
         display: block;
         margin: rem(208) auto 0 auto;
       }
+      @media (max-width: 768px) {
+        &__modal {
+          padding: rem(40);
+          height: rem(375);
+        }
+      }
+      @media (max-width: 568px) {
+        &__modal {
+          height: 100%;
+        }
+      }
 
       &__notification {
         font-size: rem(36);
@@ -966,11 +1000,23 @@
         text-align: center;
         margin-top: rem(65);
         margin-bottom: rem(73);
+        @media (max-width: 768px) {
+          font-size: rem(32);
+          line-height: rem(40);
+          text-align: center;
+          margin-top: rem(65);
+        }
+        @media (max-width: 440px) {
+          font-size: rem(24);
+        }
       }
 
       &__choice {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 440px) {
+          display: block;
+        }
       }
 
       &__no {
@@ -991,7 +1037,6 @@
           color: #e5e5e5;
         }
       }
-
       &__yes {
         display: block;
         border: 2px solid $mainColor;
@@ -1008,6 +1053,23 @@
         &:hover {
           background-color: unset;
           color: $mainColor;
+        }
+      }
+      @media (max-width: 768px) {
+        &__yes {
+          width: rem(140);
+        }
+        &__no {
+          width: rem(140);
+        }
+      }
+      @media (max-width: 440px) {
+        &__yes {
+          width: 100%;
+        }
+        &__no {
+          width: 100%;
+          margin-bottom: rem(20);
         }
       }
     }
