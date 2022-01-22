@@ -5,10 +5,13 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import {reasonModal} from "./modules/reasonModal.js";
 import {burgerOpen, quit} from "./modules/burgerMenu.js";
 import {ageLimitModal} from "./modules/ageLimitModal.js";
+import {recipeModals} from "./modules/recipeModals.js";
 
 faqFunction();
 
 flsFunctions.isWebp();
+
+recipeModals();
 
 const mobileMenu = document.querySelector('.menu__burger');
 const mobileMenuQuit = document.querySelector('.menu__quit');
