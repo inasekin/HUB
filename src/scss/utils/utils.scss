@@ -74,6 +74,11 @@
   display: none;
 }
 
+.hidden-opacity {
+  opacity: 0;
+  height: 0 !important;
+}
+
 .lock {
   overflow: hidden;
 }

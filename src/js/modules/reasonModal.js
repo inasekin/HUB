@@ -3,6 +3,8 @@ export function reasonModal() {
   const overlay = document.querySelector('.overlay');
   const btnCloseModal = document.querySelector('.close-modal');
   const btnsOpenModal = document.querySelectorAll('.reason-modal');
+  const openReasonTextBtns = document.querySelectorAll('.open-reason-text');
+  const reasonCardsTextHidden = document.querySelectorAll('.reason-card__hidden');
   const bodyEl = document.body;
 
   const openModal = function (evt) {
@@ -17,6 +19,14 @@ export function reasonModal() {
     modalReasonEl.classList.add('hidden');
     overlay.classList.add('hidden');
   };
+
+  for (let i = 0; i < openReasonTextBtns.length; i++) {
+    openReasonTextBtns[i].addEventListener('click', (evt) => {
+      evt.preventDefault();
+      reasonCardsTextHidden[i].classList.remove('hidden-opacity');
+      openReasonTextBtns[i].remove();
+    });
+  }
 
   for (let i = 0; i < btnsOpenModal.length; i++)
     btnsOpenModal[i].addEventListener('click', openModal);
