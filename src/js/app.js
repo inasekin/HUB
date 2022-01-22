@@ -15,19 +15,19 @@ recipeModals();
 
 const mobileMenu = document.querySelector('.menu__burger');
 const mobileMenuQuit = document.querySelector('.menu__quit');
-const heroBlockText = document.querySelector('.hero-block__text');
-const heroBlock = document.querySelector('.hero-block');
-const heroBlockTitle = document.querySelector('.hero-block__title');
+// const heroBlockText = document.querySelector('.hero-block__text');
+// const heroBlock = document.querySelector('.hero-block');
+// const heroBlockTitle = document.querySelector('.hero-block__title');
 
-setInterval(() => {
-  if (heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-2.png");' || heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-3.png");') {
-    heroBlockText.classList.add('hidden');
-    heroBlockTitle.classList.add('mt-100');
-  } else {
-    heroBlockText.classList.remove('hidden');
-    heroBlockTitle.classList.remove('mt-100');
-  }
-}, 5500);
+// setInterval(() => {
+//   if (heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-2.png");' || heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-3.png");') {
+//     heroBlockText.classList.add('hidden');
+//     heroBlockTitle.classList.add('mt-100');
+//   } else {
+//     heroBlockText.classList.remove('hidden');
+//     heroBlockTitle.classList.remove('mt-100');
+//   }
+// }, 5500);
 
 mobileMenu.addEventListener('click', burgerOpen);
 mobileMenuQuit.addEventListener('click', quit);
