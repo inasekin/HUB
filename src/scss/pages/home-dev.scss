@@ -300,20 +300,10 @@
     background-size: 100%;
     display: block;
     background-repeat: no-repeat;
-<<<<<<< HEAD
-  }
-
-  @media (max-width: 1500px) {
-    &__text-items:before {
-      left: 35%;
+    @media (max-width: 1500px) {
+        left: 35%;
     }
-  }
-
-  @media (max-width: 1440px) {
-    &__text-items:before {
-=======
     @media (max-width: 1440px) {
->>>>>>> 8fe7361dcb8d1f3ab2a5b901044ea18df6e38445
       width: rem(700);
       height: rem(920);
     }
@@ -1212,7 +1202,7 @@
       overflow: hidden;
       height: 0;
     }
-    .btn-card-text-show:hover ~ .hide-block.active {
+    .btn-card-text-show:hover ~ .hide-block {
       opacity: 1;
       transition: 1s;
       height: rem(260);
