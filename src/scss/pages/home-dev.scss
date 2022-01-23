@@ -301,7 +301,7 @@
     display: block;
     background-repeat: no-repeat;
     @media (max-width: 1500px) {
-        left: 35%;
+      left: 35%;
     }
     @media (max-width: 1440px) {
       width: rem(700);
@@ -514,7 +514,7 @@
   }
   @media (max-width: 1440px) {
     &__text-items .item-1 {
-      right: 15%;
+      right: 17%;
       top: 26%;
     }
     &__text-items .item-2 {
@@ -526,7 +526,7 @@
       right: 23%;
     }
     &__text-items .item-4 {
-      right: -8%;
+      right: 2%;
       top: 52%;
     }
     &__text-items .item-5 {
