@@ -195,9 +195,6 @@
     @media (max-width: 568px) {
       height: 1000px;
     }
-    @media (max-width: 414px) {
-      height: 1100px;
-    }
   }
 
   &__text-about .h2 {
@@ -286,9 +283,6 @@
     }
     @media (max-width: 414px) {
       top: 50%;
-    }
-    @media (max-width: 368px) {
-      top: 54%;
     }
   }
 
@@ -707,7 +701,7 @@
     padding-bottom: 0;
   }
 
-  &__prodicut {
+  &__product {
     @media (max-width: 768px) {
       display: none;
     }
