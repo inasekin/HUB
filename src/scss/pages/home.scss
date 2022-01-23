@@ -240,6 +240,8 @@
               padding-bottom: rem(38);
 
               & img {
+                width: 150px;
+                height: 150px;
 
                 @media (max-width: 1366px) {
                   width: 91px;

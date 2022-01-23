@@ -312,6 +312,13 @@
     display: block;
     background-repeat: no-repeat;
   }
+
+  @media (max-width: 1500px) {
+    &__text-items:before {
+      left: 35%;
+    }
+  }
+
   @media (max-width: 1440px) {
     &__text-items:before {
       width: rem(700);
@@ -1322,7 +1329,7 @@
       overflow: hidden;
       height: 0;
     }
-    .btn-card-text-show:hover ~ .hide-block {
+    .btn-card-text-show:hover ~ .hide-block.active {
       opacity: 1;
       transition: 1s;
       height: rem(260);

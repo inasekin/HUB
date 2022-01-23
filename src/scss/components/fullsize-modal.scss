@@ -127,6 +127,9 @@
         box-shadow:  inset 0 0 8px 10px white;
         padding-right: rem(32);
 
+
+        /* Стрелки */
+
         &::before {
           content: "";
           display: block;
@@ -328,6 +331,7 @@
           }
         }
       }
+
     }
   }
 }
@@ -345,6 +349,10 @@
     width: rem(118);
     height: rem(25);
     padding-top: 5px;
+  }
+
+  @media (max-width: 568px) {
+    margin-top: rem(35);
   }
 }
 
