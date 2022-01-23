@@ -9,32 +9,22 @@
         color: $mainColor;
         font-size: rem(12);
         margin-bottom: rem(10);
+        @media (max-width: 414px) {
+            font-size: rem(8);
+        }
     }
     &__info {
         color: #868080;
         font-size: rem(10);
-    }
-}
-@media (max-width: 768px) {
-    .footer {
-        width: 100%;
-    }
-}
-@media (max-width: 568px) {
-    .footer {
-        padding: rem(35) 0 rem(15) 0;
-    }
-}
-@media (max-width: 414px) {
-    .footer {
-        width: 91%;
-        padding: rem(15) 0 rem(15) 0;
-        &__copyright {
-            font-size: rem(8);
-        }
-        &__info {
+        @media (max-width: 414px) {
             font-size: rem(8);
             line-height: 10px;
         }
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    @media (max-width: 568px) {
+        padding: rem(35) 0 rem(15) 0;
     }
 }
