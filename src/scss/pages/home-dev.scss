@@ -282,6 +282,9 @@
       background-repeat: no-repeat;
     }
     @media (max-width: 414px) {
+      top: 45%;
+    }
+    @media (max-width: 368px) {
       top: 50%;
     }
   }
