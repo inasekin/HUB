@@ -1,20 +1,5 @@
-/* полоса прокрутки (скроллбар) */
-::-webkit-scrollbar {
-    width: 14px; /* ширина для вертикального скролла */
-    height: 8px; /* высота для горизонтального скролла */
-    background-color: #e2d1d6;
-    overflow: overlay;
-}
-
 ::-webkit-scrollbar-track {
     background: transparent;
-}
-
-/* ползунок скроллбара */
-::-webkit-scrollbar-thumb {
-    background: #a3012d;
-    border-radius: 40px;
-    transition: all 0.3s;
 }
 
 body {
