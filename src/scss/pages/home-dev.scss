@@ -1139,6 +1139,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media (max-width: 1199px) {
+      background-position-x: 65%;
+    }
+    @media (max-width: 1024px) {
+      background-position-x: 60%;
+    }
+    @media (max-width: 568px) {
+      background-position-x: 60%;
+    }
   }
   &__card-content {
     padding: rem(65) 0 rem(65) 0;
