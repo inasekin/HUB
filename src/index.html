@@ -5,1197 +5,1251 @@
 })
 
 <body>
-  <div class="hero-block">
-    @@include('html/header.html',{})
-    <div class="__container">
-      <div class="hero-block__content">
-        <div class="hero-block__text montserrat-text-m">
-          <p></p>
-        </div>
-        <div class="hero-block__title">
-          <h1 class="h1">К счастью, у идеального секса есть рецепт</h1>
-        </div>
-        <a href="#recipe-block" class="btn btn--white btn--large">Хочу узнать</a>
+<div class="hero-block">
+  @@include('html/header.html',{})
+  <div class="__container">
+    <div class="hero-block__content">
+      <div class="hero-block__text montserrat-text-m">
+        <p></p>
       </div>
-    </div>
-    <div class="hero-block__mobile menu">
-      <div id="burger" class="menu__burger">
-        <svg width="100" height="32" viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g style="mix-blend-mode:multiply">
-            <g style="mix-blend-mode:multiply" opacity="0.6">
-              <path
-                d="M0 15.7534C0 7.05305 7.05306 0 15.7534 0H84.2466C92.9469 0 100 7.05305 100 15.7534V15.7534C100 24.4538 92.9469 31.5069 84.2466 31.5069H15.7534C7.05306 31.5069 0 24.4538 0 15.7534V15.7534Z"
-                fill="#6B0921" />
-            </g>
-          </g>
-          <path
-            d="M24.713 13.8581C24.713 17.7445 21.5528 20.8998 17.6485 20.8998C13.7442 20.8998 10.584 17.7445 10.584 13.8581C10.584 9.97165 13.7442 6.81628 17.6485 6.81629C21.5528 6.81629 24.713 9.97165 24.713 13.8581Z"
-            stroke="white" stroke-width="2" />
-          <path d="M28.752 10.0889L28.752 4.1073L22.8791 4.1073" stroke="white" stroke-width="2" />
-          <path d="M28.752 4.21655L22.5528 9.76313" stroke="white" stroke-width="2" />
-          <path d="M17.5801 29.2283L17.5809 20.203" stroke="white" stroke-width="2" />
-          <path d="M14.0918 25.2744L20.8606 25.2744" stroke="white" stroke-width="2" />
-          <path
-            d="M49.634 20H48.108L47.87 14.456L44.608 20.098H44.132L40.856 14.442L40.632 20H39.092L39.498 10.158H39.96L44.37 17.606L48.766 10.158H49.228L49.634 20ZM58.4002 16.332C58.4002 16.584 58.3955 16.7707 58.3862 16.892H52.8562C52.9682 17.4707 53.2529 17.9373 53.7102 18.292C54.1769 18.6373 54.7135 18.81 55.3202 18.81C56.0949 18.81 56.7809 18.544 57.3782 18.012L58.0222 19.188C57.2849 19.8227 56.3562 20.14 55.2362 20.14C54.1349 20.14 53.2155 19.7947 52.4782 19.104C51.7409 18.404 51.3722 17.522 51.3722 16.458C51.3722 15.422 51.7222 14.5493 52.4222 13.84C53.1222 13.1307 53.9809 12.776 54.9982 12.776C55.9969 12.776 56.8135 13.1073 57.4482 13.77C58.0829 14.4327 58.4002 15.2867 58.4002 16.332ZM55.0542 14.008C54.5035 14.008 54.0322 14.162 53.6402 14.47C53.2575 14.778 53.0055 15.2027 52.8842 15.744H56.9582C56.9115 15.212 56.7109 14.792 56.3562 14.484C56.0015 14.1667 55.5675 14.008 55.0542 14.008ZM64.9643 12.916H66.4623V20H64.9643V17.34H61.4223V20H59.9243V12.916H61.4223V16.038H64.9643V12.916ZM74.5905 12.79C75.6172 12.79 76.4665 13.1353 77.1385 13.826C77.8199 14.5167 78.1605 15.3987 78.1605 16.472C78.1605 17.5453 77.8199 18.4273 77.1385 19.118C76.4665 19.7993 75.6172 20.14 74.5905 20.14C73.7039 20.14 72.9432 19.888 72.3085 19.384C71.6739 18.8707 71.2679 18.1893 71.0905 17.34H69.8165V20H68.3325V12.916H69.8165V16.038H71.0205C71.1139 15.0673 71.4919 14.2833 72.1545 13.686C72.8265 13.0887 73.6385 12.79 74.5905 12.79ZM73.0925 18.138C73.4939 18.5673 73.9932 18.782 74.5905 18.782C75.1879 18.782 75.6825 18.5673 76.0745 18.138C76.4665 17.7087 76.6625 17.1533 76.6625 16.472C76.6625 15.7813 76.4665 15.2213 76.0745 14.792C75.6825 14.3533 75.1879 14.134 74.5905 14.134C73.9932 14.134 73.4939 14.3533 73.0925 14.792C72.7005 15.2213 72.5045 15.7813 72.5045 16.472C72.5045 17.1533 72.7005 17.7087 73.0925 18.138Z"
-            fill="white" />
-        </svg>
+      <div class="hero-block__title">
+        <h1 class="h1">К счастью, у идеального секса есть рецепт</h1>
       </div>
-      <div id="quit" class="menu__quit">✕</div>
-      <div id="links" class="menu__links">
-        <a href="#solutions-block" class="menu__item">Неудачи?</a>
-        <a href="#reasons-block" class="menu__item">Причины</a>
-        <a href="#recipe-block" class="menu__item">Рецепты</a>
-        <a href="#specialist-block" class="menu__item">Специалисты</a>
-        <a href="#faq-block" class="menu__item">FAQ</a>
-      </div>
+      <a href="#recipe-block" class="btn btn--white btn--large">Хочу узнать</a>
     </div>
   </div>
-  <main>
-    <section class="solutions-block" id="solutions-block">
-      <div class="__container">
-        <nav class="solutions-block__nav">
-          <ul class="solutions-block__nav-menu">
-            <li class="solutions-block__nav-item"><a href="#solutions-block">Неудачи?</a></li>
-            <li class="solutions-block__nav-item"><a href="#reasons-block">Причины</a></li>
-            <li class="solutions-block__nav-item"><a href="#recipe-block">Рецепты</a></li>
-            <li class="solutions-block__nav-item"><a href="#specialist-block">Специалистам</a></li>
-            <li class="solutions-block__nav-item"><a href="#faq-block">FAQ</a></li>
-          </ul>
-        </nav>
-        <div class="solutions-block__text">
-          <div class="solutions-block__text-about">
-            <h2 class="h2">Почему случаются неудачи?</h2>
-            <div class="solutions-block__text-descr">
-              <p class="montserrat-text-m">Потому что ты и жизнь вокруг тебя меняются. Искать виноватого
-                и злиться
-                тут
-                бесполезно.
-                Просто прими факт: неудачи в сексе случаются. Но ты можешь их предотвратить.</p>
-
-              <p class="montserrat-text-m">По данным <a href="#">исследований,</a> 90% мужчин в возрасте
-                от 20 до 75 лет
-                испытывают
-                проблемы с
-                потенцией, и
-                только 65% женщин во время секса с партнером <a href="#">достигают оргазма.</a> Почему
-                никто об этом не
-                говорит
-                за пределами кабинета сексолога или уролога. Страшно, стыдно?</p>
-              <p class="montserrat-text-m">Странно… Ведь у многих случаются проблемы с эрекцией. И в этой
-                ситуации
-                ты
-                точно хочешь быть
-                уверен, что «былой секс» вернется.</p>
-              <p class="montserrat-text-m">Так какой же он, рецепт идеального секса, когда тебе уже не 18?
-                Какие у него ингредиенты,
-                чем
-                его приправить и с чем подавать?
-              </p>
-            </div>
-          </div>
-          <div class="solutions-block__text-items">
-            <div class="solutions-block__text-points item-1">
-              <a href="#">проблема</a>
-            </div>
-            <div class="solutions-block__text-points item-2">
-              <a href="#">проблема</a>
-            </div>
-            <div class="solutions-block__text-points item-3">
-              <a href="#">проблема</a>
-            </div>
-            <div class="solutions-block__text-points item-4">
-              <a href="#specialist-block">рецепт</a>
-            </div>
-            <div class="solutions-block__text-points item-5">
-              <a href="#">проблема</a>
-            </div>
-            <div class="solutions-block__text-points item-6">
-              <a href="#specialist-block">рецепт</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reasons-block" id="reasons-block">
-      <div class="__container">
-        <div class="reasons-block__title">
-          Наиболее распространенные причины
-        </div>
-        <div class="reasons-block__slider reasons-list slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="reasons-list__item card">
-                <div class="card__image card--1">
-                  <svg width="160" height="117" viewBox="0 0 160 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M58.1053 -8.89972e-06C26.0146 -1.17052e-05 -0.000129444 26.0147 -0.000132249 58.1055C-0.000135055 90.1962 26.0146 116.211 58.1053 116.211C65.8331 116.211 73.2085 114.702 79.9531 111.964C86.6977 114.702 94.0731 116.211 101.801 116.211C133.892 116.211 159.906 90.1962 159.906 58.1055C159.906 26.0147 133.892 -9.90367e-06 101.801 -1.27091e-05C94.0731 -1.33847e-05 86.6977 1.50855 79.9531 4.24724C73.2084 1.50855 65.8331 -8.22414e-06 58.1053 -8.89972e-06Z"
-                      fill="url(#paint0_linear_183_1073)" />
-                    <g style="mix-blend-mode:multiply">
-                      <path
-                        d="M109.664 58.5153C109.664 81.3404 80.6113 99.8438 80.6113 99.8438C80.6113 99.8438 51.5586 81.3404 51.5586 58.5153C51.5586 35.6902 80.6113 17.1868 80.6113 17.1868C80.6113 17.1868 109.664 35.6902 109.664 58.5153Z"
-                        fill="url(#paint1_linear_183_1073)" />
-                    </g>
-                    <g style="mix-blend-mode:multiply">
-                      <path
-                        d="M63.0164 74.8827C63.0164 61.0972 80.2026 49.9219 80.2026 49.9219C80.2026 49.9219 97.3887 61.0972 97.3887 74.8827C97.3887 88.6682 80.2025 99.8435 80.2025 99.8435C80.2025 99.8435 63.0164 88.6682 63.0164 74.8827Z"
-                        fill="url(#paint2_linear_183_1073)" />
-                    </g>
-                    <defs>
-                      <linearGradient id="paint0_linear_183_1073" x1="58.1054" y1="116.211" x2="58.1054"
-                        y2="-1.65291e-05" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FE9D2B" />
-                        <stop offset="1" stop-color="#F9E2AF" />
-                      </linearGradient>
-                      <linearGradient id="paint1_linear_183_1073" x1="80.6113" y1="17.1868" x2="80.8622" y2="80.0457"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FE9D2B" />
-                        <stop offset="1" stop-color="#FE9D2B" stop-opacity="0" />
-                      </linearGradient>
-                      <linearGradient id="paint2_linear_183_1073" x1="80.2025" y1="99.8435" x2="80.0479" y2="61.8792"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#A3022E" stop-opacity="0.59" />
-                        <stop offset="1" stop-color="white" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="card__title">
-                  Психологические установки
-                </div>
-                <div class="card__btn">
-                  <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="reasons-list__item card">
-                <div class="card__image card--2">
-                  <img src="./img/1.png" alt="">
-                </div>
-                <div class="card__title">
-                  Страх быть «пойманным с поличным»
-                </div>
-                <div class="card__btn">
-                  <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="reasons-list__item card">
-                <div class="card__image card--3">
-                  <img src="./img/2.png" alt="">
-                </div>
-                <div class="card__title">
-                  Стресс и малоподвижный образ жизни
-                </div>
-                <div class="card__btn">
-                  <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="reasons-list__item card">
-                <div class="card__image card--4">
-                  <img src="./img/3.png" alt="">
-                </div>
-                <div class="card__title">
-                  Нарушения эрекции
-                </div>
-                <div class="card__btn">
-                  <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="reasons-list__item card">
-                <div class="card__image card--5">
-                  <img src="./img/4.png" alt="">
-                </div>
-                <div class="card__title">
-                  Проблемы в отношениях
-                </div>
-                <div class="card__btn">
-                  <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="reasons-list__item card">
-                <div class="card__image card--6">
-                  <img src="./img/5.png" alt="">
-                </div>
-                <div class="card__title">
-                  Злоупотребление алкоголем
-                </div>
-                <div class="card__btn">
-                  <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination slider__pagination"></div>
-        </div>
-        <div class="reasons-block__mobile">
-          <div class="reasons-block__card reason-card">
-            <div class="reason-card__content">
-              <div class="reason-card__wrapper">
-                <div class="reason-card__image">
-                  <svg width="65" height="47" viewBox="0 0 65 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M32.2425 1.71293C34.9624 0.608415 37.9367 9.12322e-06 41.0531 9.39567e-06C53.9939 1.0527e-05 64.4844 10.4905 64.4844 23.4312C64.4844 36.372 53.9939 46.8625 41.0531 46.8625C37.9367 46.8625 34.9624 46.2541 32.2425 45.1496C29.5226 46.2541 26.5482 46.8625 23.4318 46.8625C10.4911 46.8625 0.00058838 36.372 0.000589512 23.4312C0.000590643 10.4905 10.4911 6.72385e-06 23.4318 7.85516e-06C26.5482 8.12761e-06 29.5226 0.608414 32.2425 1.71293Z"
-                      fill="url(#paint0_linear_431_9432)" />
-                    <g style="mix-blend-mode:multiply">
-                      <path
-                        d="M44.2242 23.5964C44.2242 32.8007 32.5086 40.2623 32.5086 40.2623C32.5086 40.2623 20.793 32.8007 20.793 23.5964C20.793 14.3921 32.5086 6.93054 32.5086 6.93054C32.5086 6.93054 44.2242 14.3921 44.2242 23.5964Z"
-                        fill="url(#paint1_linear_431_9432)" />
-                    </g>
-                    <g style="mix-blend-mode:multiply">
-                      <path
-                        d="M25.4127 30.1966C25.4127 24.6376 32.3431 20.1311 32.3431 20.1311C32.3431 20.1311 39.2734 24.6376 39.2734 30.1966C39.2734 35.7557 32.3431 40.2621 32.3431 40.2621C32.3431 40.2621 25.4127 35.7557 25.4127 30.1966Z"
-                        fill="url(#paint2_linear_431_9432)" />
-                    </g>
-                    <defs>
-                      <linearGradient id="paint0_linear_431_9432" x1="23.4322" y1="46.8625" x2="23.4322" y2="4.0405e-06"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FE9D2B" />
-                        <stop offset="1" stop-color="#F9E2AF" />
-                      </linearGradient>
-                      <linearGradient id="paint1_linear_431_9432" x1="32.5086" y1="6.93054" x2="32.6097" y2="32.2786"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FE9D2B" />
-                        <stop offset="1" stop-color="#FE9D2B" stop-opacity="0" />
-                      </linearGradient>
-                      <linearGradient id="paint2_linear_431_9432" x1="32.3431" y1="40.2621" x2="32.2807" y2="24.9529"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#A3022E" stop-opacity="0.59" />
-                        <stop offset="1" stop-color="white" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="reason-card__text">
-                  <div class="reason-card__title">
-                    Психологические установки
-                  </div>
-                  <div class="reason-card__btn">
-                    <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="reason-card__hidden hidden-opacity">
-                Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-                все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-                Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
-              </div>
-            </div>
-          </div>
-          <div class="reasons-block__card reason-card">
-            <div class="reason-card__content">
-              <div class="reason-card__wrapper">
-                <div class="reason-card__image">
-                  <img src="./img/1.png" alt="">
-                </div>
-                <div class="reason-card__text">
-                  <div class="reason-card__title">
-                    Страх быть «пойманным с поличным»
-                  </div>
-                  <div class="reason-card__btn">
-                    <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="reason-card__hidden hidden-opacity">
-                Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-                все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-                Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
-              </div>
-            </div>
-          </div>
-          <div class="reasons-block__card reason-card">
-            <div class="reason-card__content">
-              <div class="reason-card__wrapper">
-                <div class="reason-card__image">
-                  <img src="./img/2.png" alt="">
-                </div>
-                <div class="reason-card__text">
-                  <div class="reason-card__title">
-                    Стресс и малоподвижный образ жизни
-                  </div>
-                  <div class="reason-card__btn">
-                    <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="reason-card__hidden hidden-opacity">
-                Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-                все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-                Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
-              </div>
-            </div>
-          </div>
-          <div class="reasons-block__card reason-card">
-            <div class="reason-card__content">
-              <div class="reason-card__wrapper">
-                <div class="reason-card__image">
-                  <img src="./img/3.png" alt="">
-                </div>
-                <div class="reason-card__text">
-                  <div class="reason-card__title">
-                    Нарушения эрекции
-                  </div>
-                  <div class="reason-card__btn">
-                    <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="reason-card__hidden hidden-opacity">
-                Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-                все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-                Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
-              </div>
-            </div>
-          </div>
-          <div class="reasons-block__card reason-card">
-            <div class="reason-card__content">
-              <div class="reason-card__wrapper">
-                <div class="reason-card__image">
-                  <svg width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M30.8435 19.7366C33.389 18.7239 36.1687 18.1758 39.0769 18.1963C51.1544 18.2815 60.8761 28.1413 60.791 40.2188C60.7058 52.2964 50.8459 62.0181 38.7684 61.9329C35.86 61.9124 33.0881 61.3251 30.557 60.2764C28.0115 61.2891 25.2319 61.8372 22.3237 61.8167C10.2461 61.7315 0.524387 51.8717 0.609571 39.7941C0.694756 27.7166 10.5546 17.9949 22.6321 18.0801C25.5406 18.1006 28.3124 18.6879 30.8435 19.7366Z"
-                      fill="url(#paint0_linear_431_9483)" />
-                    <circle opacity="0.5" cx="22.4793" cy="40.0114" r="21.8689"
-                      transform="rotate(-179.596 22.4793 40.0114)" fill="url(#paint1_linear_431_9483)" />
-                    <circle opacity="0.5" cx="38.8719" cy="40.1297" r="21.8689"
-                      transform="rotate(-179.596 38.8719 40.1297)" fill="url(#paint2_linear_431_9483)" />
-                    <path
-                      d="M26.2505 24.7291C25.9989 20.3242 28.7353 13.4422 36.2627 7.66857C46.7956 -0.410268 55.1469 1.60556 59.1975 1.63413C52.6345 1.9522 44.9881 5.14819 40.5529 9.52128C37.8294 12.2066 36.5051 14.9601 36.4794 18.6048"
-                      stroke="#34000D" stroke-width="2" />
-                    <g style="mix-blend-mode:hard-light">
-                      <ellipse cx="18.3071" cy="40.8743" rx="17.7266" ry="18.4241"
-                        transform="rotate(0.404097 18.3071 40.8743)" fill="url(#paint3_radial_431_9483)" />
-                    </g>
-                    <g style="mix-blend-mode:multiply">
-                      <ellipse cx="27.1283" cy="23.2537" rx="4.10171" ry="6.02495"
-                        transform="rotate(-55.3154 27.1283 23.2537)" fill="url(#paint4_radial_431_9483)" />
-                    </g>
-                    <defs>
-                      <linearGradient id="paint0_linear_431_9483" x1="22.1333" y1="88.788" x2="22.632" y2="18.0801"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#F9E2AF" />
-                        <stop offset="1" stop-color="#FCBF6C" />
-                      </linearGradient>
-                      <linearGradient id="paint1_linear_431_9483" x1="2.79729" y1="42.1983" x2="39.2454" y2="42.1983"
-                        gradientUnits="userSpaceOnUse">
-                        <stop offset="0.149705" stop-color="#FF0038" />
-                        <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-                      </linearGradient>
-                      <linearGradient id="paint2_linear_431_9483" x1="19.1899" y1="42.3166" x2="55.638" y2="42.3165"
-                        gradientUnits="userSpaceOnUse">
-                        <stop offset="0.149705" stop-color="#FF0038" />
-                        <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-                      </linearGradient>
-                      <radialGradient id="paint3_radial_431_9483" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(11.723 43.1773) rotate(33.2099) scale(25.6924 21.7272)">
-                        <stop stop-color="#CA1646" />
-                        <stop offset="0.606109" stop-color="#CA1646" stop-opacity="0" />
-                      </radialGradient>
-                      <radialGradient id="paint4_radial_431_9483" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(25.6048 24.0068) rotate(33.7989) scale(6.76924 6.6831)">
-                        <stop offset="0.0169508" stop-color="#FCBF6C" />
-                        <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-                      </radialGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="reason-card__text">
-                  <div class="reason-card__title">
-                    Проблемы в отношениях
-                  </div>
-                  <div class="reason-card__btn">
-                    <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="reason-card__hidden hidden-opacity">
-                Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-                все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-                Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
-              </div>
-            </div>
-          </div>
-          <div class="reasons-block__card reason-card">
-            <div class="reason-card__content">
-              <div class="reason-card__wrapper">
-                <div class="reason-card__image">
-                  <svg width="98" height="91" viewBox="0 0 98 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M66.3566 44.9848C68.1492 43.9549 69.7877 42.542 71.1398 40.7691C76.2097 34.1218 75.3341 24.9307 69.1842 20.2403C63.0343 15.5498 53.9389 17.1362 48.869 23.7835C47.5019 25.5761 46.5671 27.5536 46.0514 29.578C39.6796 29.8848 33.2994 33.0752 28.9348 38.7979C21.4163 48.6558 22.7262 62.2949 31.8607 69.2616C40.9951 76.2283 54.495 73.8845 62.0135 64.0265C66.4006 58.2744 67.7818 51.2349 66.3566 44.9848Z"
-                      fill="url(#paint0_linear_431_9494)" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M73.1557 41.7377C71.924 43.3527 70.4867 44.7093 68.9187 45.7946C70.2884 52.8264 68.6297 60.6294 63.7354 67.0466C55.0421 78.4449 39.4328 81.1549 28.8712 73.0996C18.3095 65.0444 16.7948 49.2742 25.4881 37.876C30.3826 31.4585 37.4695 27.7952 44.6134 27.2566C45.2453 25.4576 46.1735 23.7129 47.4051 22.098C53.2671 14.4121 63.7837 12.5778 70.8945 18.0012C78.0053 23.4245 79.0177 34.0517 73.1557 41.7377ZM71.1422 40.7688C69.79 42.5417 68.1515 43.9546 66.3589 44.9844C67.7841 51.2346 66.4029 58.2741 62.0159 64.0262C54.4973 73.8842 40.9974 76.228 31.863 69.2613C22.7286 62.2946 21.4186 48.6555 28.9372 38.7975C33.3018 33.0749 39.682 29.8845 46.0538 29.5777C46.5694 27.5533 47.5042 25.5758 48.8714 23.7832C53.9412 17.1359 63.0366 15.5495 69.1865 20.24C75.3364 24.9304 76.212 34.1215 71.1422 40.7688Z"
-                      fill="url(#paint1_linear_431_9494)" />
-                    <path opacity="0.6"
-                      d="M51.884 61.1096C43.9462 71.5172 27.4045 58.9011 35.3423 48.4935V48.4935C42.1856 39.5208 58.6803 35.0461 58.6803 35.0461C58.6803 35.0461 57.66 53.5363 51.884 61.1096V61.1096Z"
-                      fill="url(#paint2_linear_431_9494)" />
-                    <path opacity="0.6"
-                      d="M51.1722 63.608C42.5188 74.9539 24.486 61.2005 33.1393 49.8546V49.8546C40.5995 40.0731 58.5812 35.1949 58.5812 35.1949C58.5812 35.1949 57.4689 55.352 51.1722 63.608V63.608Z"
-                      fill="url(#paint3_linear_431_9494)" />
-                    <defs>
-                      <linearGradient id="paint0_linear_431_9494" x1="78.7738" y1="7.66134" x2="15.7012" y2="90.3592"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FDE6B2" />
-                        <stop offset="1" stop-color="#FCBF6C" />
-                      </linearGradient>
-                      <linearGradient id="paint1_linear_431_9494" x1="70.8945" y1="18.0011" x2="28.8715" y2="73.1"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#5CD5AA" />
-                        <stop offset="1" stop-color="#009D65" />
-                      </linearGradient>
-                      <linearGradient id="paint2_linear_431_9494" x1="26.4389" y1="60.1672" x2="52.8276" y2="25.5675"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#F9E2AF" />
-                        <stop offset="1" stop-color="#FFC84E" />
-                      </linearGradient>
-                      <linearGradient id="paint3_linear_431_9494" x1="23.4333" y1="62.5807" x2="52.2009" y2="24.8619"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#6B0921" stop-opacity="0.68" />
-                        <stop offset="1" stop-color="#6B0921" stop-opacity="0" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="reason-card__text">
-                  <div class="reason-card__title">
-                    Злоупотребление алкоголем
-                  </div>
-                  <div class="reason-card__btn">
-                    <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-              <div class="reason-card__hidden hidden-opacity">
-                Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-                все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-                Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slider__navigation">
-        <div class="slider__button-prev">
-          <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.000673652 24.4749L48.8941 24.4752" stroke-width="4" />
-            <path d="M39.084 14.6094L49.0015 24.5269L39.084 34.4444" stroke-width="4" />
-          </svg>
-        </div>
-        <div class="slider__button-next">
-          <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.000673652 24.4749L48.8941 24.4752" stroke-width="4" />
-            <path d="M39.084 14.6094L49.0015 24.5269L39.084 34.4444" stroke-width="4" />
-          </svg>
-        </div>
-      </div>
-    </section>
-    <section class="recipe-block" id="recipe-block">
-      <div class="recipe-block__card"
-        style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Как разнообразить занятия любовью в долгих отношениях</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">10 способов сделать секс ярче</h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="1">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe-block__card"
-        style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block1.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Обсуждаем секс без недопонимания, стыда и обид</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">Как заговорить с партнером о проблемах в постели</h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="2">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe-block__card"
-        style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block2.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Секс-аксессуары, которые станут «третьим партнером»</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">Игрушки, которые добавят эмоций вашей сексуальной жизни</h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="3">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe-block__card"
-        style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block3.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Несколько действенных способов вернуть страсть в постель</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">Практики секса для случаев, когда все кажется скучным</h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="4">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe-block__card" style="background-image: url(./img/recipe-block4.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Разрушаем стереотипы о размере и продолжительности</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">Мифы о мужской сексуальности</h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="5">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe-block__card"
-        style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block5.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Развенчиваем заблуждения об оргазме, месячных и возрасте</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">Мифы о женской сексуальности </h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="6">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="recipe-block__card"
-        style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block6.png);">
-        <div class="__container">
-          <div class="recipe-block__card-content">
-            <div class="recipe-block__card-tag">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                  stroke="#FE9D2B" stroke-width="2" />
-              </svg>
-              <p>Морепродукты, фрукты и специи, которые возбуждают</p>
-            </div>
-            <div class="recipe-block__card-text">
-              <div class="btn-card-text-show">
-                <h3 class="h3">Ингредиенты, пробуждающие сексуальное влечение</h3>
-              </div>
-              <div class="hide-block">
-                <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
-                  долгих отношениях —
-                  от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
-                <a href="#" class="btn-card-text-read" data-id="7">Читать</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="specialist-block" id="specialist-block">
-      <div class="__container">
-        <div class="specialist-block__content">
-          <div class="specialist-block__text">
-            <h2 class="h2">Только для специалистов</h2>
-            <p class="montserrat-text-l">Когда мы активно работаем над улучшением качества секса, а наше
-              тело и
-              физиология не проявляют
-              аналогичного энтузиазма — это демотивирует. Для улучшения эрекции некоторые мужчины
-              полностью
-              меняют образ жизни и питание, отказываются от вредных привычек — но такие меры могут и не
-              привести к желаемому результату. К счастью, гарантированный рецепт есть у фармакологов и
-              ученых
-              из Южной Кореи — это уденафил . </p>
-          </div>
-          <div class="specialist-block__advice">
-            <ul class="specialist-block__advice-accordion">
-              <li>
-                <h3 class="specialist-block__advice-title">Ингредиент удачного секса
-                  <div class="plus-minus-toggle collapsed"></div>
-                </h3>
-                <div class="specialist-block__advice-descr">
-                  <p class="montserrat-text-s">Зидена — препарат мягкого действия, который
-                    поддерживает мужчину и
-                    помогает раскрыть свою собственную уверенность и раскованность. Лекарство <a href="#">не
-                      влияет
-                      на
-                      артериальное давление</a> и подвижность сперматозоидов, а также не вызывает
-                    цветоизменения.
-                    Принимать Зидену можно в любое время в течение дня, вне зависимости от пищевых
-                    привычек,
-                    и она <a href="#">совместима с алкоголем.</a></p>
-                </div>
-              </li>
-              <li>
-                <h3 class="specialist-block__advice-title">Время приготовления
-                  <div class="plus-minus-toggle collapsed"></div>
-                </h3>
-                <div class="specialist-block__advice-descr">
-                  <p class="montserrat-text-s">Зидена — препарат мягкого действия, который
-                    поддерживает мужчину и
-                    помогает раскрыть свою собственную уверенность и раскованность. Лекарство <a href="#">не
-                      влияет
-                      на
-                      артериальное давление</a> и подвижность сперматозоидов, а также не вызывает
-                    цветоизменения.
-                    Принимать Зидену можно в любое время в течение дня, вне зависимости от пищевых
-                    привычек,
-                    и она <a href="#">совместима с алкоголем.</a></p>
-                </div>
-              </li>
-              <li>
-                <h3 class="specialist-block__advice-title">Рецепт приготовления
-                  <div class="plus-minus-toggle collapsed"></div>
-                </h3>
-                <div class="specialist-block__advice-descr">
-                  <p class="montserrat-text-s">Зидена — препарат мягкого действия, который
-                    поддерживает мужчину и
-                    помогает раскрыть свою собственную уверенность и раскованность. Лекарство <a href="#">не
-                      влияет
-                      на
-                      артериальное давление</a> и подвижность сперматозоидов, а также не вызывает
-                    цветоизменения.
-                    Принимать Зидену можно в любое время в течение дня, вне зависимости от пищевых
-                    привычек,
-                    и она <a href="#">совместима с алкоголем.</a></p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="specialist-block__product">
-            <div class="specialist-block__product-1">
-              <img src="./img/product-specialist-block1.png" alt="">
-            </div>
-            <div class="specialist-block__product-2">
-              <img src="./img/product-specialist-block2.png" alt="">
-            </div>
-            <div class="specialist-block__product-3">
-              <img src="./img/product-specialist-block3.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="specialist-block__mobile">
-
-      </div>
-      <div class="specialist-block__age-limit age-limit">
-        <div class="__container">
-          <div class="age-limit__modal">
-            <div class="age-limit__notification">
-              Чтобы перейти в этот раздел, пожалуйста, подтвердите что вы врач
-            </div>
-            <div class="age-limit__choice">
-              <a href="#" class="age-limit__no">Нет</a>
-              <a href="#" class="age-limit__yes">Да</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="faq-block" id="faq-block" style="background-image: url(./img/faq-block.png);">
-      <div class="__container">
-        <div class="faq-block__title">
-          <h2 class="h2">FAQ</h2>
-        </div>
-        <div class="faq-block__accordion">
-          <div class="faq-block__accordion-item">
-            <div class="faq-block__accordion-title">
-              <p>Секс заканчивается, не успев толком начаться. Кажется, я не удовлетворяю партнершу. Что
-                делать?</p>
-            </div>
-            <div class="faq-block__accordion-body">
-              <div class="faq-block__accordion-content">
-                <p class="montserrat-text-s">Игрушки — отличный способ разнообразить секс, изучить себя
-                  и возбудиться. Если для
-                  тебя это странно —
-                  скажи об этом. Спроси, почему именно партнерша хочет использовать игрушки.
-                  Действительно ли ей не
-                  хватает стимуляции от члена? Или это очередная фантазия? Доверительные отношения
-                  секс-игрушки точно не
-                  испортят. И вот почему...</p>
-                <a href="#recipe-block" class="accordion-btn-desktop">Перейти к рецепту разнообразного секса</a>
-                <a href="#recipe-block" class="accordion-btn-mobile">Перейти к рецепту</a>
-              </div>
-            </div>
-          </div>
-          <div class="faq-block__accordion-item">
-            <div class="faq-block__accordion-title">
-              <p>Партнерша предлагает использовать секс-игрушки в процессе. Из-за этого я начинаю чувствовать себя
-                бесполезным. Как снять эту стигму?</p>
-            </div>
-            <div class="faq-block__accordion-body">
-              <div class="faq-block__accordion-content">
-                <p class="montserrat-text-l">Игрушки — отличный способ разнообразить секс, изучить себя
-                  и возбудиться. Если для тебя это странно — скажи об этом. Спроси, почему именно партнерша хочет
-                  использовать игрушки.
-                  Действительно ли ей не хватает стимуляции от члена? Или это очередная фантазия? Доверительные
-                  отношения
-                  секс-игрушки точно не
-                  испортят. И вот почему...</p>
-                <a href="#recipe-block" class="accordion-btn-desktop">Перейти к рецепту разнообразного секса</a>
-                <a href="#recipe-block" class="accordion-btn-mobile">Перейти к рецепту</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        @@include('html/footer.html',{})
-      </div>
-    </section>
-  </main>
-  <div class="btn-find">
-    <div class="btn-find__content">
-      <svg width="83" height="85" viewBox="0 0 83 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M29.6388 24.7226C13.2701 24.7226 0.000583856 37.9921 0.000582425 54.3608C0.000580994 70.7295 13.2701 83.999 29.6388 83.999C33.5804 83.999 37.3423 83.2296 40.7825 81.8327C44.2227 83.2296 47.9846 83.999 51.9262 83.999C68.295 83.999 81.5645 70.7295 81.5645 54.3608C81.5645 37.9921 68.295 24.7226 51.9262 24.7226C47.9846 24.7226 44.2227 25.492 40.7825 26.8889C37.3423 25.492 33.5804 24.7226 29.6388 24.7226Z"
-          fill="url(#paint0_linear_206_211)" />
-        <g style="mix-blend-mode:multiply" opacity="0.5">
-          <circle cx="29.6411" cy="54.4448" r="29.6382" transform="rotate(-180 29.6411 54.4448)"
-            fill="url(#paint1_linear_206_211)" />
-        </g>
-        <g style="mix-blend-mode:multiply" opacity="0.5">
-          <circle cx="52.3637" cy="54.4448" r="29.6382" transform="rotate(-180 52.3637 54.4448)"
-            fill="url(#paint2_linear_206_211)" />
+  <div class="hero-block__mobile menu">
+    <div id="burger" class="menu__burger">
+      <svg width="100" height="32" viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g style="mix-blend-mode:multiply">
+          <g style="mix-blend-mode:multiply" opacity="0.6">
+            <path
+              d="M0 15.7534C0 7.05305 7.05306 0 15.7534 0H84.2466C92.9469 0 100 7.05305 100 15.7534V15.7534C100 24.4538 92.9469 31.5069 84.2466 31.5069H15.7534C7.05306 31.5069 0 24.4538 0 15.7534V15.7534Z"
+              fill="#6B0921"/>
+          </g>
         </g>
         <path
-          d="M34.6052 33.6982C34.2222 27.7309 37.8647 18.378 48.011 10.4814C60.7586 0.560411 73.5456 2.08412 79.0355 2.08412C70.144 2.57791 57.7947 8.99952 53.843 12.9513C50.1777 16.6166 48.4093 20.3608 48.4093 25.3005"
-          stroke="#34000D" stroke-width="2" />
-        <g style="mix-blend-mode:overlay">
-          <ellipse cx="17.2929" cy="54.4446" rx="17.289" ry="19.7588" fill="url(#paint3_radial_206_211)" />
-        </g>
-        <g style="mix-blend-mode:multiply">
-          <ellipse cx="35.7784" cy="31.6899" rx="5.55892" ry="8.16543" transform="rotate(-55.7195 35.7784 31.6899)"
-            fill="url(#paint4_radial_206_211)" />
-        </g>
-        <defs>
-          <linearGradient id="paint0_linear_206_211" x1="29.6386" y1="120.553" x2="29.6386" y2="24.7226"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#C30935" />
-            <stop offset="1" stop-color="#6B0921" />
-          </linearGradient>
-          <linearGradient id="paint1_linear_206_211" x1="2.96669" y1="57.4086" x2="52.3637" y2="57.4086"
-            gradientUnits="userSpaceOnUse">
-            <stop offset="0.0550001" stop-color="#490010" />
-            <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-          </linearGradient>
-          <linearGradient id="paint2_linear_206_211" x1="25.6893" y1="57.4086" x2="75.0864" y2="57.4086"
-            gradientUnits="userSpaceOnUse">
-            <stop offset="0.0550001" stop-color="#490010" />
-            <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-          </linearGradient>
-          <radialGradient id="paint3_radial_206_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(10.8713 56.9145) rotate(27.512) scale(26.7338 23.3921)">
-            <stop stop-color="#FF0044" />
-            <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-          </radialGradient>
-          <radialGradient id="paint4_radial_206_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(33.7137 32.7106) rotate(33.7989) scale(9.17414 9.0574)">
-            <stop offset="0.0169508" stop-color="#330713" />
-            <stop offset="1" stop-color="#CA1646" stop-opacity="0" />
-          </radialGradient>
-        </defs>
+          d="M24.713 13.8581C24.713 17.7445 21.5528 20.8998 17.6485 20.8998C13.7442 20.8998 10.584 17.7445 10.584 13.8581C10.584 9.97165 13.7442 6.81628 17.6485 6.81629C21.5528 6.81629 24.713 9.97165 24.713 13.8581Z"
+          stroke="white" stroke-width="2"/>
+        <path d="M28.752 10.0889L28.752 4.1073L22.8791 4.1073" stroke="white" stroke-width="2"/>
+        <path d="M28.752 4.21655L22.5528 9.76313" stroke="white" stroke-width="2"/>
+        <path d="M17.5801 29.2283L17.5809 20.203" stroke="white" stroke-width="2"/>
+        <path d="M14.0918 25.2744L20.8606 25.2744" stroke="white" stroke-width="2"/>
+        <path
+          d="M49.634 20H48.108L47.87 14.456L44.608 20.098H44.132L40.856 14.442L40.632 20H39.092L39.498 10.158H39.96L44.37 17.606L48.766 10.158H49.228L49.634 20ZM58.4002 16.332C58.4002 16.584 58.3955 16.7707 58.3862 16.892H52.8562C52.9682 17.4707 53.2529 17.9373 53.7102 18.292C54.1769 18.6373 54.7135 18.81 55.3202 18.81C56.0949 18.81 56.7809 18.544 57.3782 18.012L58.0222 19.188C57.2849 19.8227 56.3562 20.14 55.2362 20.14C54.1349 20.14 53.2155 19.7947 52.4782 19.104C51.7409 18.404 51.3722 17.522 51.3722 16.458C51.3722 15.422 51.7222 14.5493 52.4222 13.84C53.1222 13.1307 53.9809 12.776 54.9982 12.776C55.9969 12.776 56.8135 13.1073 57.4482 13.77C58.0829 14.4327 58.4002 15.2867 58.4002 16.332ZM55.0542 14.008C54.5035 14.008 54.0322 14.162 53.6402 14.47C53.2575 14.778 53.0055 15.2027 52.8842 15.744H56.9582C56.9115 15.212 56.7109 14.792 56.3562 14.484C56.0015 14.1667 55.5675 14.008 55.0542 14.008ZM64.9643 12.916H66.4623V20H64.9643V17.34H61.4223V20H59.9243V12.916H61.4223V16.038H64.9643V12.916ZM74.5905 12.79C75.6172 12.79 76.4665 13.1353 77.1385 13.826C77.8199 14.5167 78.1605 15.3987 78.1605 16.472C78.1605 17.5453 77.8199 18.4273 77.1385 19.118C76.4665 19.7993 75.6172 20.14 74.5905 20.14C73.7039 20.14 72.9432 19.888 72.3085 19.384C71.6739 18.8707 71.2679 18.1893 71.0905 17.34H69.8165V20H68.3325V12.916H69.8165V16.038H71.0205C71.1139 15.0673 71.4919 14.2833 72.1545 13.686C72.8265 13.0887 73.6385 12.79 74.5905 12.79ZM73.0925 18.138C73.4939 18.5673 73.9932 18.782 74.5905 18.782C75.1879 18.782 75.6825 18.5673 76.0745 18.138C76.4665 17.7087 76.6625 17.1533 76.6625 16.472C76.6625 15.7813 76.4665 15.2213 76.0745 14.792C75.6825 14.3533 75.1879 14.134 74.5905 14.134C73.9932 14.134 73.4939 14.3533 73.0925 14.792C72.7005 15.2213 72.5045 15.7813 72.5045 16.472C72.5045 17.1533 72.7005 17.7087 73.0925 18.138Z"
+          fill="white"/>
       </svg>
-      <a href="">Найди свой рецепт
-        <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8.51927 -0.000745007L8.52058 16.9164" stroke="white" stroke-width="2" />
-          <path d="M15.9746 9.50635L8.48167 16.9993L0.988734 9.50635" stroke="white" stroke-width="2" />
-        </svg>
-      </a>
+    </div>
+    <div id="quit" class="menu__quit">✕</div>
+    <div id="links" class="menu__links">
+      <a href="#solutions-block" class="menu__item">Неудачи?</a>
+      <a href="#reasons-block" class="menu__item">Причины</a>
+      <a href="#recipe-block" class="menu__item">Рецепты</a>
+      <a href="#specialist-block" class="menu__item">Специалисты</a>
+      <a href="#faq-block" class="menu__item">FAQ</a>
     </div>
   </div>
-  <div class='modal-reason hidden'>
-    <button class='close-modal'></button>
-    <div class="modal-reason__slider swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="modal-reason__slide slide">
-            <div class="slide__top">
-              <div class="slide__image">
+</div>
+<main>
+  <section class="solutions-block" id="solutions-block">
+    <div class="__container">
+      <nav class="solutions-block__nav">
+        <ul class="solutions-block__nav-menu">
+          <li class="solutions-block__nav-item"><a href="#solutions-block">Неудачи?</a></li>
+          <li class="solutions-block__nav-item"><a href="#reasons-block">Причины</a></li>
+          <li class="solutions-block__nav-item"><a href="#recipe-block">Рецепты</a></li>
+          <li class="solutions-block__nav-item"><a href="#specialist-block">Специалистам</a></li>
+          <li class="solutions-block__nav-item"><a href="#faq-block">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="solutions-block__text">
+        <div class="solutions-block__text-about">
+          <h2 class="h2">Почему случаются неудачи?</h2>
+          <div class="solutions-block__text-descr">
+            <p class="montserrat-text-m">Потому что ты и жизнь вокруг тебя меняются. Искать виноватого
+              и злиться
+              тут
+              бесполезно.
+              Просто прими факт: неудачи в сексе случаются. Но ты можешь их предотвратить.</p>
+
+            <p class="montserrat-text-m">По данным <a href="#">исследований,</a> 90% мужчин в возрасте
+              от 20 до 75 лет
+              испытывают
+              проблемы с
+              потенцией, и
+              только 65% женщин во время секса с партнером <a href="#">достигают оргазма.</a> Почему
+              никто об этом не
+              говорит
+              за пределами кабинета сексолога или уролога. Страшно, стыдно?</p>
+            <p class="montserrat-text-m">Странно… Ведь у многих случаются проблемы с эрекцией. И в этой
+              ситуации
+              ты
+              точно хочешь быть
+              уверен, что «былой секс» вернется.</p>
+            <p class="montserrat-text-m">Так какой же он, рецепт идеального секса, когда тебе уже не 18?
+              Какие у него ингредиенты,
+              чем
+              его приправить и с чем подавать?
+            </p>
+          </div>
+        </div>
+        <div class="solutions-block__text-items">
+          <div class="solutions-block__text-points item-1">
+            <a href="#">проблема</a>
+          </div>
+          <div class="solutions-block__text-points item-2">
+            <a href="#">проблема</a>
+          </div>
+          <div class="solutions-block__text-points item-3">
+            <a href="#">проблема</a>
+          </div>
+          <div class="solutions-block__text-points item-4">
+            <a href="#specialist-block">рецепт</a>
+          </div>
+          <div class="solutions-block__text-points item-5">
+            <a href="#">проблема</a>
+          </div>
+          <div class="solutions-block__text-points item-6">
+            <a href="#specialist-block">рецепт</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reasons-block" id="reasons-block">
+    <div class="__container">
+      <div class="reasons-block__title">
+        Наиболее распространенные причины
+      </div>
+      <div class="reasons-block__slider reasons-list slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reasons-list__item card">
+              <div class="card__image card--1">
                 <svg width="160" height="117" viewBox="0 0 160 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M58.1053 -8.89972e-06C26.0146 -1.17052e-05 -0.000129444 26.0147 -0.000132249 58.1055C-0.000135055 90.1962 26.0146 116.211 58.1053 116.211C65.8331 116.211 73.2085 114.702 79.9531 111.964C86.6977 114.702 94.0731 116.211 101.801 116.211C133.892 116.211 159.906 90.1962 159.906 58.1055C159.906 26.0147 133.892 -9.90367e-06 101.801 -1.27091e-05C94.0731 -1.33847e-05 86.6977 1.50855 79.9531 4.24724C73.2084 1.50855 65.8331 -8.22414e-06 58.1053 -8.89972e-06Z"
-                    fill="url(#paint0_linear_183_1073)" />
+                        d="M58.1053 -8.89972e-06C26.0146 -1.17052e-05 -0.000129444 26.0147 -0.000132249 58.1055C-0.000135055 90.1962 26.0146 116.211 58.1053 116.211C65.8331 116.211 73.2085 114.702 79.9531 111.964C86.6977 114.702 94.0731 116.211 101.801 116.211C133.892 116.211 159.906 90.1962 159.906 58.1055C159.906 26.0147 133.892 -9.90367e-06 101.801 -1.27091e-05C94.0731 -1.33847e-05 86.6977 1.50855 79.9531 4.24724C73.2084 1.50855 65.8331 -8.22414e-06 58.1053 -8.89972e-06Z"
+                        fill="url(#paint0_linear_183_1073)"/>
                   <g style="mix-blend-mode:multiply">
                     <path
                       d="M109.664 58.5153C109.664 81.3404 80.6113 99.8438 80.6113 99.8438C80.6113 99.8438 51.5586 81.3404 51.5586 58.5153C51.5586 35.6902 80.6113 17.1868 80.6113 17.1868C80.6113 17.1868 109.664 35.6902 109.664 58.5153Z"
-                      fill="url(#paint1_linear_183_1073)" />
+                      fill="url(#paint1_linear_183_1073)"/>
                   </g>
                   <g style="mix-blend-mode:multiply">
                     <path
                       d="M63.0164 74.8827C63.0164 61.0972 80.2026 49.9219 80.2026 49.9219C80.2026 49.9219 97.3887 61.0972 97.3887 74.8827C97.3887 88.6682 80.2025 99.8435 80.2025 99.8435C80.2025 99.8435 63.0164 88.6682 63.0164 74.8827Z"
-                      fill="url(#paint2_linear_183_1073)" />
+                      fill="url(#paint2_linear_183_1073)"/>
                   </g>
                   <defs>
-                    <linearGradient id="paint0_linear_183_1073" x1="58.1054" y1="116.211" x2="58.1054" y2="-1.65291e-05"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#FE9D2B" />
-                      <stop offset="1" stop-color="#F9E2AF" />
+                    <linearGradient id="paint0_linear_183_1073" x1="58.1054" y1="116.211" x2="58.1054"
+                                    y2="-1.65291e-05" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FE9D2B"/>
+                      <stop offset="1" stop-color="#F9E2AF"/>
                     </linearGradient>
                     <linearGradient id="paint1_linear_183_1073" x1="80.6113" y1="17.1868" x2="80.8622" y2="80.0457"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#FE9D2B" />
-                      <stop offset="1" stop-color="#FE9D2B" stop-opacity="0" />
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FE9D2B"/>
+                      <stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
                     </linearGradient>
                     <linearGradient id="paint2_linear_183_1073" x1="80.2025" y1="99.8435" x2="80.0479" y2="61.8792"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#A3022E" stop-opacity="0.59" />
-                      <stop offset="1" stop-color="white" />
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#A3022E" stop-opacity="0.59"/>
+                      <stop offset="1" stop-color="white"/>
                     </linearGradient>
                   </defs>
                 </svg>
               </div>
-              <div class="slide__title">
+              <div class="card__title">
                 Психологические установки
               </div>
-            </div>
-            <div class="slide__text montserrat-text-m">
-              Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-              все
-              в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
-              Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+              <div class="card__btn">
+                <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="modal-reason__slide slide">
-            <div class="slide__top">
-              <div class="slide__image">
+          <div class="swiper-slide">
+            <div class="reasons-list__item card">
+              <div class="card__image card--2">
                 <img src="./img/1.png" alt="">
               </div>
-              <div class="slide__title">
+              <div class="card__title">
                 Страх быть «пойманным с поличным»
               </div>
+              <div class="card__btn">
+                <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
+              </div>
             </div>
-            <div class="slide__text montserrat-text-m">
+          </div>
+          <div class="swiper-slide">
+            <div class="reasons-list__item card">
+              <div class="card__image card--3">
+                <img src="./img/2.png" alt="">
+              </div>
+              <div class="card__title">
+                Стресс и малоподвижный образ жизни
+              </div>
+              <div class="card__btn">
+                <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reasons-list__item card">
+              <div class="card__image card--4">
+                <img src="./img/3.png" alt="">
+              </div>
+              <div class="card__title">
+                Нарушения эрекции
+              </div>
+              <div class="card__btn">
+                <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reasons-list__item card">
+              <div class="card__image card--5">
+                <img src="./img/4.png" alt="">
+              </div>
+              <div class="card__title">
+                Проблемы в отношениях
+              </div>
+              <div class="card__btn">
+                <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reasons-list__item card">
+              <div class="card__image card--6">
+                <img src="./img/5.png" alt="">
+              </div>
+              <div class="card__title">
+                Злоупотребление алкоголем
+              </div>
+              <div class="card__btn">
+                <a href="#" class="btn btn--small btn--white reason-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination slider__pagination"></div>
+      </div>
+      <div class="reasons-block__mobile">
+        <div class="reasons-block__card reason-card">
+          <div class="reason-card__content">
+            <div class="reason-card__wrapper">
+              <div class="reason-card__image">
+                <svg width="65" height="47" viewBox="0 0 65 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M32.2425 1.71293C34.9624 0.608415 37.9367 9.12322e-06 41.0531 9.39567e-06C53.9939 1.0527e-05 64.4844 10.4905 64.4844 23.4312C64.4844 36.372 53.9939 46.8625 41.0531 46.8625C37.9367 46.8625 34.9624 46.2541 32.2425 45.1496C29.5226 46.2541 26.5482 46.8625 23.4318 46.8625C10.4911 46.8625 0.00058838 36.372 0.000589512 23.4312C0.000590643 10.4905 10.4911 6.72385e-06 23.4318 7.85516e-06C26.5482 8.12761e-06 29.5226 0.608414 32.2425 1.71293Z"
+                        fill="url(#paint0_linear_431_9432)"/>
+                  <g style="mix-blend-mode:multiply">
+                    <path
+                      d="M44.2242 23.5964C44.2242 32.8007 32.5086 40.2623 32.5086 40.2623C32.5086 40.2623 20.793 32.8007 20.793 23.5964C20.793 14.3921 32.5086 6.93054 32.5086 6.93054C32.5086 6.93054 44.2242 14.3921 44.2242 23.5964Z"
+                      fill="url(#paint1_linear_431_9432)"/>
+                  </g>
+                  <g style="mix-blend-mode:multiply">
+                    <path
+                      d="M25.4127 30.1966C25.4127 24.6376 32.3431 20.1311 32.3431 20.1311C32.3431 20.1311 39.2734 24.6376 39.2734 30.1966C39.2734 35.7557 32.3431 40.2621 32.3431 40.2621C32.3431 40.2621 25.4127 35.7557 25.4127 30.1966Z"
+                      fill="url(#paint2_linear_431_9432)"/>
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_431_9432" x1="23.4322" y1="46.8625" x2="23.4322" y2="4.0405e-06"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FE9D2B"/>
+                      <stop offset="1" stop-color="#F9E2AF"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_431_9432" x1="32.5086" y1="6.93054" x2="32.6097" y2="32.2786"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FE9D2B"/>
+                      <stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_431_9432" x1="32.3431" y1="40.2621" x2="32.2807" y2="24.9529"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#A3022E" stop-opacity="0.59"/>
+                      <stop offset="1" stop-color="white"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reason-card__text">
+                <div class="reason-card__title">
+                  Психологические установки
+                </div>
+                <div class="reason-card__btn">
+                  <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card__hidden hidden-opacity">
               Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
-              все
-              в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+              все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
               Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-reason__navigation slider-navigation">
-        <div class="slider-navigation__prev">
-          <svg width="175" height="172" viewBox="0 0 175 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.000157598 85.9747L171.865 85.9614" stroke-width="4" />
-            <path d="M159.662 73.6875L172 86.0259L159.662 98.3643" stroke-width="4" />
-          </svg>
+        <div class="reasons-block__card reason-card">
+          <div class="reason-card__content">
+            <div class="reason-card__wrapper">
+              <div class="reason-card__image">
+                <img src="./img/1.png" alt="">
+              </div>
+              <div class="reason-card__text">
+                <div class="reason-card__title">
+                  Страх быть «пойманным с поличным»
+                </div>
+                <div class="reason-card__btn">
+                  <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card__hidden hidden-opacity">
+              Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
+              все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+              Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+            </div>
+          </div>
         </div>
-        <div class="slider-navigation__next">
-          <svg width="175" height="172" viewBox="0 0 175 172" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.000157598 85.9747L171.865 85.9614" stroke-width="4" />
-            <path d="M159.662 73.6875L172 86.0259L159.662 98.3643" stroke-width="4" />
-          </svg>
-
+        <div class="reasons-block__card reason-card">
+          <div class="reason-card__content">
+            <div class="reason-card__wrapper">
+              <div class="reason-card__image">
+                <img src="./img/2.png" alt="">
+              </div>
+              <div class="reason-card__text">
+                <div class="reason-card__title">
+                  Стресс и малоподвижный образ жизни
+                </div>
+                <div class="reason-card__btn">
+                  <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card__hidden hidden-opacity">
+              Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
+              все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+              Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+            </div>
+          </div>
+        </div>
+        <div class="reasons-block__card reason-card">
+          <div class="reason-card__content">
+            <div class="reason-card__wrapper">
+              <div class="reason-card__image">
+                <img src="./img/3.png" alt="">
+              </div>
+              <div class="reason-card__text">
+                <div class="reason-card__title">
+                  Нарушения эрекции
+                </div>
+                <div class="reason-card__btn">
+                  <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card__hidden hidden-opacity">
+              Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
+              все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+              Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+            </div>
+          </div>
+        </div>
+        <div class="reasons-block__card reason-card">
+          <div class="reason-card__content">
+            <div class="reason-card__wrapper">
+              <div class="reason-card__image">
+                <svg width="62" height="63" viewBox="0 0 62 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M30.8435 19.7366C33.389 18.7239 36.1687 18.1758 39.0769 18.1963C51.1544 18.2815 60.8761 28.1413 60.791 40.2188C60.7058 52.2964 50.8459 62.0181 38.7684 61.9329C35.86 61.9124 33.0881 61.3251 30.557 60.2764C28.0115 61.2891 25.2319 61.8372 22.3237 61.8167C10.2461 61.7315 0.524387 51.8717 0.609571 39.7941C0.694756 27.7166 10.5546 17.9949 22.6321 18.0801C25.5406 18.1006 28.3124 18.6879 30.8435 19.7366Z"
+                        fill="url(#paint0_linear_431_9483)"/>
+                  <circle opacity="0.5" cx="22.4793" cy="40.0114" r="21.8689"
+                          transform="rotate(-179.596 22.4793 40.0114)" fill="url(#paint1_linear_431_9483)"/>
+                  <circle opacity="0.5" cx="38.8719" cy="40.1297" r="21.8689"
+                          transform="rotate(-179.596 38.8719 40.1297)" fill="url(#paint2_linear_431_9483)"/>
+                  <path
+                    d="M26.2505 24.7291C25.9989 20.3242 28.7353 13.4422 36.2627 7.66857C46.7956 -0.410268 55.1469 1.60556 59.1975 1.63413C52.6345 1.9522 44.9881 5.14819 40.5529 9.52128C37.8294 12.2066 36.5051 14.9601 36.4794 18.6048"
+                    stroke="#34000D" stroke-width="2"/>
+                  <g style="mix-blend-mode:hard-light">
+                    <ellipse cx="18.3071" cy="40.8743" rx="17.7266" ry="18.4241"
+                             transform="rotate(0.404097 18.3071 40.8743)" fill="url(#paint3_radial_431_9483)"/>
+                  </g>
+                  <g style="mix-blend-mode:multiply">
+                    <ellipse cx="27.1283" cy="23.2537" rx="4.10171" ry="6.02495"
+                             transform="rotate(-55.3154 27.1283 23.2537)" fill="url(#paint4_radial_431_9483)"/>
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_431_9483" x1="22.1333" y1="88.788" x2="22.632" y2="18.0801"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F9E2AF"/>
+                      <stop offset="1" stop-color="#FCBF6C"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_431_9483" x1="2.79729" y1="42.1983" x2="39.2454" y2="42.1983"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop offset="0.149705" stop-color="#FF0038"/>
+                      <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_431_9483" x1="19.1899" y1="42.3166" x2="55.638" y2="42.3165"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop offset="0.149705" stop-color="#FF0038"/>
+                      <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+                    </linearGradient>
+                    <radialGradient id="paint3_radial_431_9483" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(11.723 43.1773) rotate(33.2099) scale(25.6924 21.7272)">
+                      <stop stop-color="#CA1646"/>
+                      <stop offset="0.606109" stop-color="#CA1646" stop-opacity="0"/>
+                    </radialGradient>
+                    <radialGradient id="paint4_radial_431_9483" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(25.6048 24.0068) rotate(33.7989) scale(6.76924 6.6831)">
+                      <stop offset="0.0169508" stop-color="#FCBF6C"/>
+                      <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reason-card__text">
+                <div class="reason-card__title">
+                  Проблемы в отношениях
+                </div>
+                <div class="reason-card__btn">
+                  <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card__hidden hidden-opacity">
+              Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
+              все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+              Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+            </div>
+          </div>
+        </div>
+        <div class="reasons-block__card reason-card">
+          <div class="reason-card__content">
+            <div class="reason-card__wrapper">
+              <div class="reason-card__image">
+                <svg width="98" height="91" viewBox="0 0 98 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M66.3566 44.9848C68.1492 43.9549 69.7877 42.542 71.1398 40.7691C76.2097 34.1218 75.3341 24.9307 69.1842 20.2403C63.0343 15.5498 53.9389 17.1362 48.869 23.7835C47.5019 25.5761 46.5671 27.5536 46.0514 29.578C39.6796 29.8848 33.2994 33.0752 28.9348 38.7979C21.4163 48.6558 22.7262 62.2949 31.8607 69.2616C40.9951 76.2283 54.495 73.8845 62.0135 64.0265C66.4006 58.2744 67.7818 51.2349 66.3566 44.9848Z"
+                        fill="url(#paint0_linear_431_9494)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M73.1557 41.7377C71.924 43.3527 70.4867 44.7093 68.9187 45.7946C70.2884 52.8264 68.6297 60.6294 63.7354 67.0466C55.0421 78.4449 39.4328 81.1549 28.8712 73.0996C18.3095 65.0444 16.7948 49.2742 25.4881 37.876C30.3826 31.4585 37.4695 27.7952 44.6134 27.2566C45.2453 25.4576 46.1735 23.7129 47.4051 22.098C53.2671 14.4121 63.7837 12.5778 70.8945 18.0012C78.0053 23.4245 79.0177 34.0517 73.1557 41.7377ZM71.1422 40.7688C69.79 42.5417 68.1515 43.9546 66.3589 44.9844C67.7841 51.2346 66.4029 58.2741 62.0159 64.0262C54.4973 73.8842 40.9974 76.228 31.863 69.2613C22.7286 62.2946 21.4186 48.6555 28.9372 38.7975C33.3018 33.0749 39.682 29.8845 46.0538 29.5777C46.5694 27.5533 47.5042 25.5758 48.8714 23.7832C53.9412 17.1359 63.0366 15.5495 69.1865 20.24C75.3364 24.9304 76.212 34.1215 71.1422 40.7688Z"
+                        fill="url(#paint1_linear_431_9494)"/>
+                  <path opacity="0.6"
+                        d="M51.884 61.1096C43.9462 71.5172 27.4045 58.9011 35.3423 48.4935V48.4935C42.1856 39.5208 58.6803 35.0461 58.6803 35.0461C58.6803 35.0461 57.66 53.5363 51.884 61.1096V61.1096Z"
+                        fill="url(#paint2_linear_431_9494)"/>
+                  <path opacity="0.6"
+                        d="M51.1722 63.608C42.5188 74.9539 24.486 61.2005 33.1393 49.8546V49.8546C40.5995 40.0731 58.5812 35.1949 58.5812 35.1949C58.5812 35.1949 57.4689 55.352 51.1722 63.608V63.608Z"
+                        fill="url(#paint3_linear_431_9494)"/>
+                  <defs>
+                    <linearGradient id="paint0_linear_431_9494" x1="78.7738" y1="7.66134" x2="15.7012" y2="90.3592"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FDE6B2"/>
+                      <stop offset="1" stop-color="#FCBF6C"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_431_9494" x1="70.8945" y1="18.0011" x2="28.8715" y2="73.1"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#5CD5AA"/>
+                      <stop offset="1" stop-color="#009D65"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_431_9494" x1="26.4389" y1="60.1672" x2="52.8276" y2="25.5675"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#F9E2AF"/>
+                      <stop offset="1" stop-color="#FFC84E"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_431_9494" x1="23.4333" y1="62.5807" x2="52.2009" y2="24.8619"
+                                    gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6B0921" stop-opacity="0.68"/>
+                      <stop offset="1" stop-color="#6B0921" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="reason-card__text">
+                <div class="reason-card__title">
+                  Злоупотребление алкоголем
+                </div>
+                <div class="reason-card__btn">
+                  <a href="#" class="btn btn--white open-reason-text">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="reason-card__hidden hidden-opacity">
+              Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
+              все в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+              Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class='overlay hidden'></div>
-  <section class="fullsize-modal recipe-article hidden">
-    <div class="recipe-article__content">
-      <div class="recipe-article__header" style="background-image: url(../img/article-1.png)">
-        <div class="recipe-article__text-block">
-          <div class="tag">
+    <div class="slider__navigation">
+      <div class="slider__button-prev">
+        <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.000673652 24.4749L48.8941 24.4752" stroke-width="4"/>
+          <path d="M39.084 14.6094L49.0015 24.5269L39.084 34.4444" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="slider__button-next">
+        <svg width="52" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.000673652 24.4749L48.8941 24.4752" stroke-width="4"/>
+          <path d="M39.084 14.6094L49.0015 24.5269L39.084 34.4444" stroke-width="4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section class="recipe-block" id="recipe-block">
+    <div class="recipe-block__card"
+         style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block.png);" id="article-1">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
-                stroke="#FE9D2B" stroke-width="2" />
+                stroke="#FE9D2B" stroke-width="2"/>
             </svg>
-            <div class="tag__text">Как разнообразить занятия любовью в долгих отношениях</div>
+            <p>Как разнообразить занятия любовью в долгих отношениях</p>
           </div>
-          <div class="title">10 способов сделать секс ярче</div>
-        </div>
-      </div>
-      <div class="recipe-article__text">
-        <div class="article-content">
-          <div class="article-content__text">
-            <div class="article-content__introduction">
-              <p class="montserrat-text-l">Игрушки для взрослых — это не просто развлечение, это способ разнообразить
-                монотонный секс, лучше узнать себя и партнершу. Ну, еще и получить совершенно новые эмоции. Любую секс
-                игрушку можно использовать как одному, так и в паре, мы собрали топ-5 игрушек, которые идеально подходят
-                для того, чтобы стать вашим «третьим».</p>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">10 способов сделать секс ярче</h3>
             </div>
-            <div class="article-content__wrapper">
-              <div class="article-content__row row-content">
-                <div class="row-content__title">
-                  Общайся с партнером
-                </div>
-                <div class="row-content__text montserrat-text-l">
-                  С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
-                  тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
-                  гораздо лучше друг-друга понимать.
-                </div>
-              </div>
-              <div class="article-content__row row-content">
-                <div class="row-content__title">
-                  Общайся с партнером
-                </div>
-                <div class="row-content__text montserrat-text-l">
-                  С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
-                  тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
-                  гораздо лучше друг-друга понимать.
-                </div>
-
-              </div>
-              <div class="article-content__row row-content">
-                <div class="row-content__title">
-                  Общайся с партнером
-                </div>
-                <div class="row-content__text montserrat-text-l">
-                  С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
-                  тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
-                  гораздо лучше друг-друга понимать.
-                </div>
-                <div class="row-content__actions">
-                  <div class="action">
-                    <div class="action__title montserrat-text-l">
-                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26 13L-5.06639e-07 13" stroke="#CA1646" stroke-width="6" />
-                        <path d="M12.6279 26L12.6279 -5.06639e-07" stroke="#CA1646" stroke-width="6" />
-                      </svg>
-                      Как стоит:
-                    </div>
-                    <div class="action__text">
-                      Через 5-10 минут после жаркого секса, но не сразу
-                    </div>
-                  </div>
-                  <div class="action">
-                    <div class="action__title montserrat-text-l">
-                      <svg width="26" height="6" viewBox="0 0 26 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26 3L-5.06639e-07 3" stroke="#CA1646" stroke-width="6" />
-                      </svg>
-                      Как не стоит:
-                    </div>
-                    <div class="action__text">
-                      В процессе секса
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="article-content__row row-content">
-                <div class="row-content__title">
-                  Общайся с партнером
-                </div>
-                <div class="row-content__text montserrat-text-l">
-                  С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
-                  тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
-                  гораздо лучше друг-друга понимать.
-                </div>
-              </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="1">Читать</a>
             </div>
           </div>
-          <div class="article-content__illustrations">
-            <svg width="375" height="435" viewBox="0 0 375 435" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.8">
-                <circle cx="179.711" cy="299.809" r="46.8372" transform="rotate(23.5436 179.711 299.809)"
-                  stroke="#FE9D2B" stroke-width="20" />
-                <path d="M160.939 344.896L131.841 411.68" stroke="#FE9D2B" stroke-width="20" />
-                <path d="M171.633 384.484L124.664 364.019" stroke="#FE9D2B" stroke-width="20" />
-              </g>
-              <g opacity="0.64">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M268.697 253.083C327.038 229.992 355.613 163.977 332.522 105.636C309.43 47.2948 243.416 18.7193 185.074 41.811C171.025 47.3718 158.702 55.4217 148.411 65.2543C134.179 65.1287 119.685 67.6933 105.637 73.2538C47.2953 96.3454 18.7198 162.36 41.8115 220.701C64.9031 279.042 130.917 307.618 189.259 284.526C203.308 278.965 215.631 270.915 225.923 261.083C240.155 261.208 254.648 258.644 268.697 253.083Z"
-                  fill="url(#paint0_linear_478_9967)" />
-                <g style="mix-blend-mode:multiply">
-                  <path
-                    d="M241.476 142.533C257.9 184.029 218.396 238.574 218.396 238.574C218.396 238.574 152.264 225.84 135.839 184.344C119.415 142.848 158.919 88.3029 158.919 88.3029C158.919 88.3029 225.051 101.037 241.476 142.533Z"
-                    fill="url(#paint1_linear_478_9967)" />
-                </g>
-                <g style="mix-blend-mode:multiply">
-                  <path
-                    d="M168.446 205.856C158.527 180.794 181.73 148.111 181.73 148.111C181.73 148.111 221.016 156.061 230.935 181.123C240.855 206.185 217.652 238.869 217.652 238.869C217.652 238.869 178.366 230.918 168.446 205.856Z"
-                    fill="url(#paint2_linear_478_9967)" />
-                </g>
-              </g>
-              <defs>
-                <linearGradient id="paint0_linear_478_9967" x1="185.074" y1="41.811" x2="268.697" y2="253.084"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FE9D2B" />
-                  <stop offset="1" stop-color="#F9E2AF" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_478_9967" x1="158.919" y1="88.3029" x2="204.606" y2="202.4"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FE9D2B" />
-                  <stop offset="1" stop-color="#FE9D2B" stop-opacity="0" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_478_9967" x1="217.652" y1="238.869" x2="190.053" y2="169.961"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#A3022E" stop-opacity="0.59" />
-                  <stop offset="1" stop-color="white" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <svg width="272" height="249" viewBox="0 0 272 249" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.64">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M123.393 209.287C162.146 230.877 211.065 216.964 232.655 178.21C254.245 139.456 240.332 90.5379 201.578 68.9476C192.245 63.7481 182.323 60.6078 172.335 59.3775C166.033 51.5331 158.141 44.7497 148.81 39.5509C110.056 17.9606 61.1376 31.8742 39.5472 70.6279C17.9569 109.382 31.8705 158.3 70.6242 179.89C79.9569 185.09 89.8792 188.23 99.8673 189.46C106.17 197.305 114.061 204.088 123.393 209.287Z"
-                  fill="url(#paint0_linear_431_6171)" />
-                <g style="mix-blend-mode:multiply">
-                  <path
-                    d="M171.706 144.902C156.35 172.466 108.816 175.265 108.816 175.265C108.816 175.265 86.1799 133.373 101.536 105.809C116.893 78.2449 164.427 75.446 164.427 75.446C164.427 75.446 187.063 117.338 171.706 144.902Z"
-                    fill="url(#paint1_linear_431_6171)" />
-                </g>
-                <g style="mix-blend-mode:multiply">
-                  <path
-                    d="M104.361 133.284C113.635 116.636 141.908 114.703 141.908 114.703C141.908 114.703 155.144 139.761 145.87 156.409C136.595 173.057 108.322 174.99 108.322 174.99C108.322 174.99 95.086 149.931 104.361 133.284Z"
-                    fill="url(#paint2_linear_431_6171)" />
-                </g>
-              </g>
-              <defs>
-                <linearGradient id="paint0_linear_431_6171" x1="201.578" y1="68.9475" x2="123.392" y2="209.288"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FE9D2B" />
-                  <stop offset="1" stop-color="#F9E2AF" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_431_6171" x1="164.427" y1="75.446" x2="122.439" y2="151.525"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FE9D2B" />
-                  <stop offset="1" stop-color="#FE9D2B" stop-opacity="0" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_431_6171" x1="108.322" y1="174.99" x2="133.677" y2="129.039"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#A3022E" stop-opacity="0.59" />
-                  <stop offset="1" stop-color="white" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <svg width="274" height="238" viewBox="0 0 274 238" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity="0.8">
-                <circle r="32.0874" transform="matrix(0.0346507 0.999399 0.999399 -0.0346507 232.904 61.3709)"
-                  stroke="#FE9D2B" stroke-width="14" />
-                <path d="M213.409 7.51112L183.148 8.5603L184.179 38.2709" stroke="#FE9D2B" stroke-width="14" />
-                <path d="M183.698 8.54126L212.846 38.9295" stroke="#FE9D2B" stroke-width="14" />
-              </g>
-              <g opacity="0.64">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M160.686 176.679C189.279 157.367 196.803 118.533 177.492 89.9393C158.18 61.3461 119.346 53.8217 90.7527 73.1333C83.8668 77.7839 78.2029 83.5667 73.8414 90.066C66.1842 91.6846 58.7052 94.7787 51.8201 99.4289C23.2268 118.74 15.7024 157.575 35.014 186.168C54.3255 214.761 93.16 222.286 121.753 202.974C128.639 198.324 134.303 192.541 138.665 186.042C146.322 184.423 153.801 181.329 160.686 176.679Z"
-                  fill="url(#paint0_linear_490_9971)" />
-                <g style="mix-blend-mode:multiply">
-                  <path
-                    d="M132.971 120.539C146.707 140.876 131.956 174.846 131.956 174.846C131.956 174.846 94.9344 175.843 81.1987 155.505C67.4631 135.168 82.2145 101.198 82.2145 101.198C82.2145 101.198 119.236 100.201 132.971 120.539Z"
-                    fill="url(#paint1_linear_490_9971)" />
-                </g>
-                <g style="mix-blend-mode:multiply">
-                  <path
-                    d="M101.257 163.195C92.9615 150.912 101.55 130.612 101.55 130.612C101.55 130.612 123.588 130.227 131.883 142.51C140.179 154.793 131.591 175.093 131.591 175.093C131.591 175.093 109.553 175.478 101.257 163.195Z"
-                    fill="url(#paint2_linear_490_9971)" />
-                </g>
-              </g>
-              <defs>
-                <linearGradient id="paint0_linear_490_9971" x1="90.7527" y1="73.1333" x2="160.686" y2="176.679"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FE9D2B" />
-                  <stop offset="1" stop-color="#F9E2AF" />
-                </linearGradient>
-                <linearGradient id="paint1_linear_490_9971" x1="82.2145" y1="101.198" x2="120.265" y2="157.055"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FE9D2B" />
-                  <stop offset="1" stop-color="#FE9D2B" stop-opacity="0" />
-                </linearGradient>
-                <linearGradient id="paint2_linear_490_9971" x1="131.591" y1="175.093" x2="108.607" y2="141.359"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#A3022E" stop-opacity="0.59" />
-                  <stop offset="1" stop-color="white" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
         </div>
-        <a href="#" id="closeFullSizeModal" class="btn btn--medium btn--red">Свернуть</a>
       </div>
     </div>
+    <div class="recipe-block__card"
+         style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block1.png);" id="article-2">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+                stroke="#FE9D2B" stroke-width="2"/>
+            </svg>
+            <p>Обсуждаем секс без недопонимания, стыда и обид</p>
+          </div>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">Как заговорить с партнером о проблемах в постели</h3>
+            </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="2">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe-block__card"
+         style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block2.png);" id="article-3">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+                stroke="#FE9D2B" stroke-width="2"/>
+            </svg>
+            <p>Секс-аксессуары, которые станут «третьим партнером»</p>
+          </div>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">Игрушки, которые добавят эмоций вашей сексуальной жизни</h3>
+            </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="3">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe-block__card"
+         style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block3.png);" id="article-4">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+                stroke="#FE9D2B" stroke-width="2"/>
+            </svg>
+            <p>Несколько действенных способов вернуть страсть в постель</p>
+          </div>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">Практики секса для случаев, когда все кажется скучным</h3>
+            </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="4">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe-block__card" id="article-5" style="background-image: url(./img/recipe-block4.png);">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+                stroke="#FE9D2B" stroke-width="2"/>
+            </svg>
+            <p>Разрушаем стереотипы о размере и продолжительности</p>
+          </div>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">Мифы о мужской сексуальности</h3>
+            </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="5">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe-block__card"
+         style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block5.png);" id="article-6">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+                stroke="#FE9D2B" stroke-width="2"/>
+            </svg>
+            <p>Развенчиваем заблуждения об оргазме, месячных и возрасте</p>
+          </div>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">Мифы о женской сексуальности </h3>
+            </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="6">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe-block__card"
+         style="background-image: linear-gradient(0deg, #000 0%, rgba(164, 0, 41, 0) 50%), url(./img/recipe-block6.png);" id="article-7">
+      <div class="__container">
+        <div class="recipe-block__card-content">
+          <div class="recipe-block__card-tag">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+                stroke="#FE9D2B" stroke-width="2"/>
+            </svg>
+            <p>Морепродукты, фрукты и специи, которые возбуждают</p>
+          </div>
+          <div class="recipe-block__card-text">
+            <div class="btn-card-text-show">
+              <h3 class="h3">Ингредиенты, пробуждающие сексуальное влечение</h3>
+            </div>
+            <div class="hide-block">
+              <p class="montserrat-text-m">В этой статье собраны универсальные советы о том, как разнообразить секс в
+                долгих отношениях —
+                от откровенных разговоров и переписок до секс-игрушек и необычных локаций.</p>
+              <a href="#" class="btn-card-text-read" data-id="7">Читать</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <script src="js/app.min.js"></script>
+  <section class="specialist-block" id="specialist-block">
+    <div class="__container">
+      <div class="specialist-block__content">
+        <div class="specialist-block__text">
+          <h2 class="h2">Только для специалистов</h2>
+          <p class="montserrat-text-l">Когда мы активно работаем над улучшением качества секса, а наше
+            тело и
+            физиология не проявляют
+            аналогичного энтузиазма — это демотивирует. Для улучшения эрекции некоторые мужчины
+            полностью
+            меняют образ жизни и питание, отказываются от вредных привычек — но такие меры могут и не
+            привести к желаемому результату. К счастью, гарантированный рецепт есть у фармакологов и
+            ученых
+            из Южной Кореи — это уденафил . </p>
+        </div>
+        <div class="specialist-block__advice">
+          <ul class="specialist-block__advice-accordion">
+            <li>
+              <h3 class="specialist-block__advice-title">Ингредиент удачного секса
+                <div class="plus-minus-toggle collapsed"></div>
+              </h3>
+              <div class="specialist-block__advice-descr">
+                <p class="montserrat-text-s">Зидена — препарат мягкого действия, который
+                  поддерживает мужчину и
+                  помогает раскрыть свою собственную уверенность и раскованность. Лекарство <a href="#">не
+                    влияет
+                    на
+                    артериальное давление</a> и подвижность сперматозоидов, а также не вызывает
+                  цветоизменения.
+                  Принимать Зидену можно в любое время в течение дня, вне зависимости от пищевых
+                  привычек,
+                  и она <a href="#">совместима с алкоголем.</a></p>
+              </div>
+            </li>
+            <li>
+              <h3 class="specialist-block__advice-title">Время приготовления
+                <div class="plus-minus-toggle collapsed"></div>
+              </h3>
+              <div class="specialist-block__advice-descr">
+                <p class="montserrat-text-s">Зидена — препарат мягкого действия, который
+                  поддерживает мужчину и
+                  помогает раскрыть свою собственную уверенность и раскованность. Лекарство <a href="#">не
+                    влияет
+                    на
+                    артериальное давление</a> и подвижность сперматозоидов, а также не вызывает
+                  цветоизменения.
+                  Принимать Зидену можно в любое время в течение дня, вне зависимости от пищевых
+                  привычек,
+                  и она <a href="#">совместима с алкоголем.</a></p>
+              </div>
+            </li>
+            <li>
+              <h3 class="specialist-block__advice-title">Рецепт приготовления
+                <div class="plus-minus-toggle collapsed"></div>
+              </h3>
+              <div class="specialist-block__advice-descr">
+                <p class="montserrat-text-s">Зидена — препарат мягкого действия, который
+                  поддерживает мужчину и
+                  помогает раскрыть свою собственную уверенность и раскованность. Лекарство <a href="#">не
+                    влияет
+                    на
+                    артериальное давление</a> и подвижность сперматозоидов, а также не вызывает
+                  цветоизменения.
+                  Принимать Зидену можно в любое время в течение дня, вне зависимости от пищевых
+                  привычек,
+                  и она <a href="#">совместима с алкоголем.</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="specialist-block__product">
+          <div class="specialist-block__product-1">
+            <img src="./img/product-specialist-block1.png" alt="">
+          </div>
+          <div class="specialist-block__product-2">
+            <img src="./img/product-specialist-block2.png" alt="">
+          </div>
+          <div class="specialist-block__product-3">
+            <img src="./img/product-specialist-block3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="specialist-block__mobile">
+
+    </div>
+    <div class="specialist-block__age-limit age-limit">
+      <div class="__container">
+        <div class="age-limit__modal">
+          <div class="age-limit__notification">
+            Чтобы перейти в этот раздел, пожалуйста, подтвердите что вы врач
+          </div>
+          <div class="age-limit__choice">
+            <a href="#" class="age-limit__no">Нет</a>
+            <a href="#" class="age-limit__yes">Да</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq-block" id="faq-block" style="background-image: url(./img/faq-block.png);">
+    <div class="__container">
+      <div class="faq-block__title">
+        <h2 class="h2">FAQ</h2>
+      </div>
+      <div class="faq-block__accordion">
+        <div class="faq-block__accordion-item">
+          <div class="faq-block__accordion-title">
+            <p>«Секс заканчивается, не успев толком начаться. Кажется, я не удовлетворяю партнершу. Что делать?»</p>
+          </div>
+          <div class="faq-block__accordion-body">
+            <div class="faq-block__accordion-content">
+              <p class="montserrat-text-s">Ответ кроется в самом вопросе. Это тебе кажется, что партнерша не получает
+                удовольствие от секса. Но как кажется ей? Понять можно, только если аккуратно об этом спросить. Скорее
+                всего, партнерша уже знает рецепт секса, который ее удовлетворит. Разговори ее!</p>
+              <a href="#article-2" class="accordion-btn-desktop">Перейти к рецепту разнообразного секса</a>
+              <a href="#article-2" class="accordion-btn-mobile">Перейти к рецепту</a>
+            </div>
+          </div>
+        </div>
+        <div class="faq-block__accordion-item">
+          <div class="faq-block__accordion-title">
+            <p>«Партнерша предлагает использовать секс-игрушки в процессе. Из-за этого я начинаю чувствовать себя
+              бесполезным. Как снять эту стигму?»</p>
+          </div>
+          <div class="faq-block__accordion-body">
+            <div class="faq-block__accordion-content">
+              <p class="montserrat-text-l">Игрушки — отличный способ разнообразить секс, изучить себя и возбудиться.
+                Если для тебя это странно — скажи об этом. Спроси, почему именно партнерша хочет использовать игрушки.
+                Действительно ли ей не хватает стимуляции от члена? Или это очередная фантазия? Доверительные отношения
+                секс-игрушки точно не испортят. И вот почему...</p>
+              <a href="#article-3" class="accordion-btn-desktop">Перейти к рецепту разнообразного секса</a>
+              <a href="#article-3" class="accordion-btn-mobile">Перейти к рецепту</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('html/footer.html',{})
+    </div>
+  </section>
+</main>
+<div class="btn-find">
+  <div class="btn-find__content">
+    <svg width="83" height="85" viewBox="0 0 83 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M29.6388 24.7226C13.2701 24.7226 0.000583856 37.9921 0.000582425 54.3608C0.000580994 70.7295 13.2701 83.999 29.6388 83.999C33.5804 83.999 37.3423 83.2296 40.7825 81.8327C44.2227 83.2296 47.9846 83.999 51.9262 83.999C68.295 83.999 81.5645 70.7295 81.5645 54.3608C81.5645 37.9921 68.295 24.7226 51.9262 24.7226C47.9846 24.7226 44.2227 25.492 40.7825 26.8889C37.3423 25.492 33.5804 24.7226 29.6388 24.7226Z"
+            fill="url(#paint0_linear_206_211)"/>
+      <g style="mix-blend-mode:multiply" opacity="0.5">
+        <circle cx="29.6411" cy="54.4448" r="29.6382" transform="rotate(-180 29.6411 54.4448)"
+                fill="url(#paint1_linear_206_211)"/>
+      </g>
+      <g style="mix-blend-mode:multiply" opacity="0.5">
+        <circle cx="52.3637" cy="54.4448" r="29.6382" transform="rotate(-180 52.3637 54.4448)"
+                fill="url(#paint2_linear_206_211)"/>
+      </g>
+      <path
+        d="M34.6052 33.6982C34.2222 27.7309 37.8647 18.378 48.011 10.4814C60.7586 0.560411 73.5456 2.08412 79.0355 2.08412C70.144 2.57791 57.7947 8.99952 53.843 12.9513C50.1777 16.6166 48.4093 20.3608 48.4093 25.3005"
+        stroke="#34000D" stroke-width="2"/>
+      <g style="mix-blend-mode:overlay">
+        <ellipse cx="17.2929" cy="54.4446" rx="17.289" ry="19.7588" fill="url(#paint3_radial_206_211)"/>
+      </g>
+      <g style="mix-blend-mode:multiply">
+        <ellipse cx="35.7784" cy="31.6899" rx="5.55892" ry="8.16543" transform="rotate(-55.7195 35.7784 31.6899)"
+                 fill="url(#paint4_radial_206_211)"/>
+      </g>
+      <defs>
+        <linearGradient id="paint0_linear_206_211" x1="29.6386" y1="120.553" x2="29.6386" y2="24.7226"
+                        gradientUnits="userSpaceOnUse">
+          <stop stop-color="#C30935"/>
+          <stop offset="1" stop-color="#6B0921"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_206_211" x1="2.96669" y1="57.4086" x2="52.3637" y2="57.4086"
+                        gradientUnits="userSpaceOnUse">
+          <stop offset="0.0550001" stop-color="#490010"/>
+          <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="paint2_linear_206_211" x1="25.6893" y1="57.4086" x2="75.0864" y2="57.4086"
+                        gradientUnits="userSpaceOnUse">
+          <stop offset="0.0550001" stop-color="#490010"/>
+          <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="paint3_radial_206_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(10.8713 56.9145) rotate(27.512) scale(26.7338 23.3921)">
+          <stop stop-color="#FF0044"/>
+          <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="paint4_radial_206_211" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(33.7137 32.7106) rotate(33.7989) scale(9.17414 9.0574)">
+          <stop offset="0.0169508" stop-color="#330713"/>
+          <stop offset="1" stop-color="#CA1646" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+    </svg>
+    <a href="">Найди свой рецепт
+      <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.51927 -0.000745007L8.52058 16.9164" stroke="white" stroke-width="2"/>
+        <path d="M15.9746 9.50635L8.48167 16.9993L0.988734 9.50635" stroke="white" stroke-width="2"/>
+      </svg>
+    </a>
+  </div>
+</div>
+<div class='modal-reason hidden'>
+  <button class='close-modal'></button>
+  <div class="modal-reason__slider swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="modal-reason__slide slide">
+          <div class="slide__top">
+            <div class="slide__image">
+              <svg width="160" height="117" viewBox="0 0 160 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M58.1053 -8.89972e-06C26.0146 -1.17052e-05 -0.000129444 26.0147 -0.000132249 58.1055C-0.000135055 90.1962 26.0146 116.211 58.1053 116.211C65.8331 116.211 73.2085 114.702 79.9531 111.964C86.6977 114.702 94.0731 116.211 101.801 116.211C133.892 116.211 159.906 90.1962 159.906 58.1055C159.906 26.0147 133.892 -9.90367e-06 101.801 -1.27091e-05C94.0731 -1.33847e-05 86.6977 1.50855 79.9531 4.24724C73.2084 1.50855 65.8331 -8.22414e-06 58.1053 -8.89972e-06Z"
+                      fill="url(#paint0_linear_183_1073)"/>
+                <g style="mix-blend-mode:multiply">
+                  <path
+                    d="M109.664 58.5153C109.664 81.3404 80.6113 99.8438 80.6113 99.8438C80.6113 99.8438 51.5586 81.3404 51.5586 58.5153C51.5586 35.6902 80.6113 17.1868 80.6113 17.1868C80.6113 17.1868 109.664 35.6902 109.664 58.5153Z"
+                    fill="url(#paint1_linear_183_1073)"/>
+                </g>
+                <g style="mix-blend-mode:multiply">
+                  <path
+                    d="M63.0164 74.8827C63.0164 61.0972 80.2026 49.9219 80.2026 49.9219C80.2026 49.9219 97.3887 61.0972 97.3887 74.8827C97.3887 88.6682 80.2025 99.8435 80.2025 99.8435C80.2025 99.8435 63.0164 88.6682 63.0164 74.8827Z"
+                    fill="url(#paint2_linear_183_1073)"/>
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_183_1073" x1="58.1054" y1="116.211" x2="58.1054" y2="-1.65291e-05"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FE9D2B"/>
+                    <stop offset="1" stop-color="#F9E2AF"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_183_1073" x1="80.6113" y1="17.1868" x2="80.8622" y2="80.0457"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FE9D2B"/>
+                    <stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_183_1073" x1="80.2025" y1="99.8435" x2="80.0479" y2="61.8792"
+                                  gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#A3022E" stop-opacity="0.59"/>
+                    <stop offset="1" stop-color="white"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="slide__title">
+              Психологические установки
+            </div>
+          </div>
+          <div class="slide__text montserrat-text-m">
+            Когда в постели начинаются проблемы, ты выбираешь один из двух методов: игнорирование («сделаю вид, что
+            все
+            в порядке») или критику («ты могла бы быть поактивнее сегодня»). А стоит просто сказать о проблеме.
+            Обсуждение снимает градус стресса. Да и придумать решение вместе проще.
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="modal-reason__slide slide">
+          <div class="slide__top">
+            <div class="slide__image">
+              <img src="./img/1.png" alt="">
+            </div>
+            <div class="slide__title">
+              Страх быть «пойманным с поличным»
+            </div>
+          </div>
+          <div class="slide__text montserrat-text-m">
+            Страшно представить, что жена или девушка найдет твои средства для улучшения потенции. Что она подумает? Она
+            не способна возбудить? У тебя есть кто-то еще, и теперь сил «на двоих» не хватает? От одной мысли пропадает
+            все желание. Рискни и сам расскажи партнерше о своих «помощниках».
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="modal-reason__slide slide">
+          <div class="slide__top">
+            <div class="slide__image">
+              <img src="./img/1.png" alt="">
+            </div>
+            <div class="slide__title">
+              Стресс и малоподвижный образ жизни
+            </div>
+          </div>
+          <div class="slide__text montserrat-text-m">
+            Еще одна причина забить на секс и выбрать сон. Потому что все силы уже ушли на работу, быт и ссоры. О каких
+            экспериментах в постели может быть речь?
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="modal-reason__slide slide">
+          <div class="slide__top">
+            <div class="slide__image">
+              <img src="./img/1.png" alt="">
+            </div>
+            <div class="slide__title">
+              Нарушения эрекции
+            </div>
+          </div>
+          <div class="slide__text montserrat-text-m">
+            В механизм эрекции вовлечены сразу три системы организма — нервная, сосудистая и эндокринная. Одна
+            перегружена— все перестает работать.
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="modal-reason__slide slide">
+          <div class="slide__top">
+            <div class="slide__image">
+              <img src="./img/1.png" alt="">
+            </div>
+            <div class="slide__title">
+              Проблемы в отношениях
+            </div>
+          </div>
+          <div class="slide__text montserrat-text-m">
+            Все любят «секс после ссоры». Он жгучий, страстный, эмоциональный. Но никто не будет заниматься сексом после
+            тупой ссоры о неоплаченных счетах, забытом поднятии стульчака или неожиданного приезда тещи.
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="modal-reason__slide slide">
+          <div class="slide__top">
+            <div class="slide__image">
+              <img src="./img/1.png" alt="">
+            </div>
+            <div class="slide__title">
+              Злоупотребление алкоголем
+            </div>
+          </div>
+          <div class="slide__text montserrat-text-m">
+            Пара бокалов виски могут усилить твое желание и сделать тебя тем самым мачо. Но стоит немного перепить, как
+            эрекция пропадает. Вместе с ней уходит и чувствительность. Значит, сегодня ты не кончишь.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-reason__navigation slider-navigation">
+      <div class="slider-navigation__prev">
+        <svg width="175" height="172" viewBox="0 0 175 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.000157598 85.9747L171.865 85.9614" stroke-width="4"/>
+          <path d="M159.662 73.6875L172 86.0259L159.662 98.3643" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="slider-navigation__next">
+        <svg width="175" height="172" viewBox="0 0 175 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.000157598 85.9747L171.865 85.9614" stroke-width="4"/>
+          <path d="M159.662 73.6875L172 86.0259L159.662 98.3643" stroke-width="4"/>
+        </svg>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class='overlay hidden'></div>
+<section class="fullsize-modal recipe-article hidden">
+  <div class="recipe-article__content">
+    <div class="recipe-article__header" style="background-image: url(../img/article-1.png)">
+      <div class="recipe-article__text-block">
+        <div class="tag">
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.6411 7.27887L6.05607 10.2874L8 12L13.3589 7.27888C14.7603 6.04423 14.7603 3.85997 13.3589 2.62532C12.3044 1.69632 10.7236 1.69632 9.66914 2.62532L8 4.09581L6.33086 2.62532C5.27637 1.69632 3.6956 1.69632 2.6411 2.62532C1.23967 3.85997 1.23966 6.04423 2.6411 7.27887Z"
+              stroke="#FE9D2B" stroke-width="2"/>
+          </svg>
+          <div class="tag__text">Как разнообразить занятия любовью в долгих отношениях</div>
+        </div>
+        <div class="title">10 способов сделать секс ярче</div>
+      </div>
+    </div>
+    <div class="recipe-article__text">
+      <div class="article-content">
+        <div class="article-content__text">
+          <div class="article-content__introduction">
+            <p class="montserrat-text-l">Игрушки для взрослых — это не просто развлечение, это способ разнообразить
+              монотонный секс, лучше узнать себя и партнершу. Ну, еще и получить совершенно новые эмоции. Любую секс
+              игрушку можно использовать как одному, так и в паре, мы собрали топ-5 игрушек, которые идеально подходят
+              для того, чтобы стать вашим «третьим».</p>
+          </div>
+          <div class="article-content__wrapper">
+            <div class="article-content__row row-content">
+              <div class="row-content__title">
+                Общайся с партнером
+              </div>
+              <div class="row-content__text montserrat-text-l">
+                С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
+                тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
+                гораздо лучше друг-друга понимать.
+              </div>
+            </div>
+            <div class="article-content__row row-content">
+              <div class="row-content__title">
+                Общайся с партнером
+              </div>
+              <div class="row-content__text montserrat-text-l">
+                С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
+                тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
+                гораздо лучше друг-друга понимать.
+              </div>
+
+            </div>
+            <div class="article-content__row row-content">
+              <div class="row-content__title">
+                Общайся с партнером
+              </div>
+              <div class="row-content__text montserrat-text-l">
+                С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
+                тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
+                гораздо лучше друг-друга понимать.
+              </div>
+              <div class="row-content__actions">
+                <div class="action">
+                  <div class="action__title montserrat-text-l">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26 13L-5.06639e-07 13" stroke="#CA1646" stroke-width="6"/>
+                      <path d="M12.6279 26L12.6279 -5.06639e-07" stroke="#CA1646" stroke-width="6"/>
+                    </svg>
+                    Как стоит:
+                  </div>
+                  <div class="action__text">
+                    Через 5-10 минут после жаркого секса, но не сразу
+                  </div>
+                </div>
+                <div class="action">
+                  <div class="action__title montserrat-text-l">
+                    <svg width="26" height="6" viewBox="0 0 26 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M26 3L-5.06639e-07 3" stroke="#CA1646" stroke-width="6"/>
+                    </svg>
+                    Как не стоит:
+                  </div>
+                  <div class="action__text">
+                    В процессе секса
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-content__row row-content">
+              <div class="row-content__title">
+                Общайся с партнером
+              </div>
+              <div class="row-content__text montserrat-text-l">
+                С помощью разговоров можно завести друг-друга или настроиться на правильную волну. Попробуйте нарушить
+                тишину с помощью «грязных словечек» или говорите о том, что приносит вам удовольствие. Так вы станете
+                гораздо лучше друг-друга понимать.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article-content__illustrations">
+          <svg width="375" height="435" viewBox="0 0 375 435" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8">
+              <circle cx="179.711" cy="299.809" r="46.8372" transform="rotate(23.5436 179.711 299.809)"
+                      stroke="#FE9D2B" stroke-width="20"/>
+              <path d="M160.939 344.896L131.841 411.68" stroke="#FE9D2B" stroke-width="20"/>
+              <path d="M171.633 384.484L124.664 364.019" stroke="#FE9D2B" stroke-width="20"/>
+            </g>
+            <g opacity="0.64">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M268.697 253.083C327.038 229.992 355.613 163.977 332.522 105.636C309.43 47.2948 243.416 18.7193 185.074 41.811C171.025 47.3718 158.702 55.4217 148.411 65.2543C134.179 65.1287 119.685 67.6933 105.637 73.2538C47.2953 96.3454 18.7198 162.36 41.8115 220.701C64.9031 279.042 130.917 307.618 189.259 284.526C203.308 278.965 215.631 270.915 225.923 261.083C240.155 261.208 254.648 258.644 268.697 253.083Z"
+                    fill="url(#paint0_linear_478_9967)"/>
+              <g style="mix-blend-mode:multiply">
+                <path
+                  d="M241.476 142.533C257.9 184.029 218.396 238.574 218.396 238.574C218.396 238.574 152.264 225.84 135.839 184.344C119.415 142.848 158.919 88.3029 158.919 88.3029C158.919 88.3029 225.051 101.037 241.476 142.533Z"
+                  fill="url(#paint1_linear_478_9967)"/>
+              </g>
+              <g style="mix-blend-mode:multiply">
+                <path
+                  d="M168.446 205.856C158.527 180.794 181.73 148.111 181.73 148.111C181.73 148.111 221.016 156.061 230.935 181.123C240.855 206.185 217.652 238.869 217.652 238.869C217.652 238.869 178.366 230.918 168.446 205.856Z"
+                  fill="url(#paint2_linear_478_9967)"/>
+              </g>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_478_9967" x1="185.074" y1="41.811" x2="268.697" y2="253.084"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9D2B"/>
+                <stop offset="1" stop-color="#F9E2AF"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_478_9967" x1="158.919" y1="88.3029" x2="204.606" y2="202.4"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9D2B"/>
+                <stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_478_9967" x1="217.652" y1="238.869" x2="190.053" y2="169.961"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A3022E" stop-opacity="0.59"/>
+                <stop offset="1" stop-color="white"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg width="272" height="249" viewBox="0 0 272 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.64">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M123.393 209.287C162.146 230.877 211.065 216.964 232.655 178.21C254.245 139.456 240.332 90.5379 201.578 68.9476C192.245 63.7481 182.323 60.6078 172.335 59.3775C166.033 51.5331 158.141 44.7497 148.81 39.5509C110.056 17.9606 61.1376 31.8742 39.5472 70.6279C17.9569 109.382 31.8705 158.3 70.6242 179.89C79.9569 185.09 89.8792 188.23 99.8673 189.46C106.17 197.305 114.061 204.088 123.393 209.287Z"
+                    fill="url(#paint0_linear_431_6171)"/>
+              <g style="mix-blend-mode:multiply">
+                <path
+                  d="M171.706 144.902C156.35 172.466 108.816 175.265 108.816 175.265C108.816 175.265 86.1799 133.373 101.536 105.809C116.893 78.2449 164.427 75.446 164.427 75.446C164.427 75.446 187.063 117.338 171.706 144.902Z"
+                  fill="url(#paint1_linear_431_6171)"/>
+              </g>
+              <g style="mix-blend-mode:multiply">
+                <path
+                  d="M104.361 133.284C113.635 116.636 141.908 114.703 141.908 114.703C141.908 114.703 155.144 139.761 145.87 156.409C136.595 173.057 108.322 174.99 108.322 174.99C108.322 174.99 95.086 149.931 104.361 133.284Z"
+                  fill="url(#paint2_linear_431_6171)"/>
+              </g>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_431_6171" x1="201.578" y1="68.9475" x2="123.392" y2="209.288"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9D2B"/>
+                <stop offset="1" stop-color="#F9E2AF"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_431_6171" x1="164.427" y1="75.446" x2="122.439" y2="151.525"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9D2B"/>
+                <stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_431_6171" x1="108.322" y1="174.99" x2="133.677" y2="129.039"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A3022E" stop-opacity="0.59"/>
+                <stop offset="1" stop-color="white"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg width="274" height="238" viewBox="0 0 274 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8">
+              <circle r="32.0874" transform="matrix(0.0346507 0.999399 0.999399 -0.0346507 232.904 61.3709)"
+                      stroke="#FE9D2B" stroke-width="14"/>
+              <path d="M213.409 7.51112L183.148 8.5603L184.179 38.2709" stroke="#FE9D2B" stroke-width="14"/>
+              <path d="M183.698 8.54126L212.846 38.9295" stroke="#FE9D2B" stroke-width="14"/>
+            </g>
+            <g opacity="0.64">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M160.686 176.679C189.279 157.367 196.803 118.533 177.492 89.9393C158.18 61.3461 119.346 53.8217 90.7527 73.1333C83.8668 77.7839 78.2029 83.5667 73.8414 90.066C66.1842 91.6846 58.7052 94.7787 51.8201 99.4289C23.2268 118.74 15.7024 157.575 35.014 186.168C54.3255 214.761 93.16 222.286 121.753 202.974C128.639 198.324 134.303 192.541 138.665 186.042C146.322 184.423 153.801 181.329 160.686 176.679Z"
+                    fill="url(#paint0_linear_490_9971)"/>
+              <g style="mix-blend-mode:multiply">
+                <path
+                  d="M132.971 120.539C146.707 140.876 131.956 174.846 131.956 174.846C131.956 174.846 94.9344 175.843 81.1987 155.505C67.4631 135.168 82.2145 101.198 82.2145 101.198C82.2145 101.198 119.236 100.201 132.971 120.539Z"
+                  fill="url(#paint1_linear_490_9971)"/>
+              </g>
+              <g style="mix-blend-mode:multiply">
+                <path
+                  d="M101.257 163.195C92.9615 150.912 101.55 130.612 101.55 130.612C101.55 130.612 123.588 130.227 131.883 142.51C140.179 154.793 131.591 175.093 131.591 175.093C131.591 175.093 109.553 175.478 101.257 163.195Z"
+                  fill="url(#paint2_linear_490_9971)"/>
+              </g>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_490_9971" x1="90.7527" y1="73.1333" x2="160.686" y2="176.679"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9D2B"/>
+                <stop offset="1" stop-color="#F9E2AF"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_490_9971" x1="82.2145" y1="101.198" x2="120.265" y2="157.055"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FE9D2B"/>
+                <stop offset="1" stop-color="#FE9D2B" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="paint2_linear_490_9971" x1="131.591" y1="175.093" x2="108.607" y2="141.359"
+                              gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A3022E" stop-opacity="0.59"/>
+                <stop offset="1" stop-color="white"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <a href="#" id="closeFullSizeModal" class="btn btn--medium btn--red">Свернуть</a>
+    </div>
+  </div>
+  </div>
+</section>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>

@@ -692,11 +692,10 @@
 .specialist-block {
   position: relative;
   background-image: url(../img/specialist.png);
-  background-attachment: fixed;
+  //background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: scroll linear 40s infinite;
   padding-bottom: rem(50);
 
   @media (max-width: 768px) {

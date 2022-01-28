@@ -32,7 +32,7 @@ const mobileMenuQuit = document.querySelector('.menu__quit');
 mobileMenu.addEventListener('click', burgerOpen);
 mobileMenuQuit.addEventListener('click', quit);
 
-preload(images.slice(0), function() {
+preload(images.slice(0), () => {
   requestAnimationFrame(csaHead);
 });
 
@@ -46,6 +46,7 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
   slidesPerView: 3,
   watchOverflow: true,
   allowTouchMove: true,
+  slidesPerGroup: 3,
 
   // If we need pagination
   pagination: {

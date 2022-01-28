@@ -1,6 +1,7 @@
 .hero-block {
   width: 100%;
-  background: url(../img/hero-block.png)  no-repeat;
+  background-image: url(../img/hero-block.png);
+  background-repeat: no-repeat;
   background-size: cover;
   transition:all 3s ease;
   -webkit-transition:all 3s ease;
