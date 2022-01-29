@@ -4,10 +4,10 @@
   cursor: none;
   background-repeat: no-repeat;
   background-size: cover;
-  transition:all 3s ease;
-  -webkit-transition:all 3s ease;
-  -moz-transition:all 3s ease;
-  -o-transition:all 3s ease;
+  transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
   opacity: 1;
   z-index: -2;
   animation: scroll linear 60s infinite;
@@ -23,15 +23,11 @@
   }
 
   &__spotlight {
-      position: absolute;
+    position: absolute;
     top: 0;
-      height: 100%;
-      width: 100%;
-      background-image: radial-gradient(
-          circle,
-          transparent 160px,
-          rgba(168, 15, 50, 1.0) 200px
-      );
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle, transparent 160px, rgba(168, 15, 50, 1) 200px);
   }
 
   &__mobile {
@@ -159,14 +155,12 @@
     }
 
     .reasons-list {
-
       &__item {
-
         &.card {
           display: block;
           width: rem(350);
           height: rem(468);
-          background: linear-gradient(180deg, #CA1646 0%, #6B0921 100%);
+          background: linear-gradient(180deg, #ca1646 0%, #6b0921 100%);
           box-shadow: 2px -1px 10px rgba(73, 0, 16, 0.2);
           border-radius: rem(30);
           margin-bottom: rem(44);
@@ -183,9 +177,7 @@
         }
 
         .card {
-
           &__image {
-
             svg {
               display: block;
               width: rem(160);
@@ -336,7 +328,6 @@
               padding-bottom: rem(30);
 
               & img {
-
                 @media (max-width: 1366px) {
                   width: 91px;
                   height: 91px;
@@ -419,9 +410,9 @@
     }
 
     .reason-card {
-
       &__content {
-        background: linear-gradient(180deg, #CA1646 0%, #6B0921 100%);
+        position: relative;
+        background: linear-gradient(180deg, #ca1646 0%, #6b0921 100%);
         box-shadow: 2px -1px 10px rgba(73, 0, 16, 0.2);
         border-radius: 14px;
         padding: rem(27) rem(15);
@@ -437,7 +428,6 @@
         @media (max-width: 568px) {
           margin-right: rem(10);
         }
-
         & svg {
           width: 72px;
           height: 72px;
@@ -448,10 +438,8 @@
           height: 72px;
         }
       }
-
       &__text {
       }
-
       &__title {
         margin-top: rem(10);
         font-size: rem(16);
@@ -482,7 +470,32 @@
         height: rem(170);
         transition: all 1s ease;
       }
-
+    }
+    @media (max-width: 768px) {
+      .card--3 {
+        margin-left: 75px;
+        margin-bottom: 75px;
+        img {
+          width: 95px;
+          height: 95px;
+          position: absolute;
+          left: 5px;
+          top: 15px;
+          display: block;
+        }
+      }
+      .card--6 {
+        margin-left: 70px;
+        margin-bottom: 75px;
+        svg {
+          width: 95px;
+          height: 95px;
+          position: absolute;
+          left: 5px;
+          top: 15px;
+          display: block;
+        }
+      }
     }
   }
 }
