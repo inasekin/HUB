@@ -21,11 +21,11 @@
       animation: scroll-article linear 60s infinite;
 
       @media (max-width: 1800px) {
-        height: 50vh;
+        height: 45vh;
       }
 
       @media (max-width: 1440px) {
-        height: rem(500);
+        height: rem(400);
         animation: none;
         -ms-background-position-y: unset;
         background-position-y: unset;

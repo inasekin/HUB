@@ -1289,23 +1289,41 @@
   right: 5%;
   bottom: 5%;
   z-index: 999;
-  display: none !important;
-
+  @media (max-width: 568px) {
+    height: rem(45);
+    width: rem(100);
+  }
   svg {
     bottom: 0;
     position: absolute;
+    @media (max-width: 568px) {
+      height: rem(60);
+      width: rem(60);
+    }
   }
-
+  span {
+    @media (max-width: 568px) {
+      display: none;
+    }
+  }
   a {
     display: block;
     font-size: rem(20);
     margin-left: rem(100);
     margin-top: rem(10);
+    @media (max-width: 568px) {
+      margin-top: 0;
+      margin-left: rem(50);
+    }
 
     svg {
       position: relative;
       top: 5px;
       left: rem(10);
+      @media (max-width: 568px) {
+        height: rem(30);
+        width: rem(30);
+      }
     }
   }
 }

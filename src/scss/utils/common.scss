@@ -66,13 +66,13 @@
   @media (max-width: 800px) {
     left: rem(40);
   }
-
-
   & svg {
     transform: rotate(180deg);
-    stroke: $mainColor;
+    transition: 0.3s all;
+    stroke: $secondRedColor;
 
     &:hover {
+      stroke: $mainColor;
       cursor: pointer;
     }
 
@@ -123,9 +123,11 @@
   }
 
   & svg {
-    stroke: $mainColor;
+    transition: 0.3s all;
+    stroke: $secondRedColor;
 
     &:hover {
+      stroke: $mainColor;
       cursor: pointer;
     }
 
@@ -136,7 +138,6 @@
 }
 
 .slider__button-prev.swiper-button-disabled {
-
   & svg {
     stroke: $secondRedColor;
 
@@ -147,7 +148,6 @@
 }
 
 .slider__button-next.swiper-button-disabled {
-
   & svg {
     stroke: $secondRedColor;
 

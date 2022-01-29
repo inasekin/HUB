@@ -463,6 +463,9 @@
         box-shadow: 2px -1px 10px rgba(73, 0, 16, 0.2);
         border-radius: 14px;
         padding: rem(27) rem(15);
+        @media (max-width: 568px) {
+          padding: rem(15) rem(15);
+        }
       }
 
       &__wrapper {
@@ -514,8 +517,19 @@
         font-weight: 500;
         font-size: rem(12);
         line-height: rem(18);
-        height: rem(170);
+        height: rem(80);
         transition: all 1s ease;
+        @media (max-width: 568px) {
+          margin-top: rem(5);
+          height: rem(130);
+        }
+        @media (max-width: 414px) {
+          height: rem(150);
+        }
+        @media (max-width: 368px) {
+          margin-top: rem(5);
+          height: rem(180);
+        }
       }
     }
     @media (max-width: 768px) {
@@ -541,6 +555,18 @@
           left: 5px;
           top: 15px;
           display: block;
+        }
+      }
+    }
+    @media (max-width: 568px) {
+      .card--3 {
+        img {
+          top: 5px;
+        }
+      }
+      .card--6 {
+        svg {
+          top: 5px;
         }
       }
     }
