@@ -6,6 +6,11 @@
   height: 100%;
   z-index: 100000;
 
+  @media (max-width: 568px) {
+    overflow: scroll;
+    background: #fff;
+  }
+
   .recipe-article {
     &__content {
       background-color: $mainColor;
@@ -115,6 +120,10 @@
         height: rem(480);
         padding-left: rem(32);
       }
+      @media (max-width: 568px) {
+        height: 100%;
+      }
+
 
       .article-content {
         height: 90%;
@@ -143,6 +152,9 @@
           @media (max-width: 768px) {
             height: 30px;
           }
+          @media (max-width: 568px) {
+            display: none;
+          }
         }
 
         &::after {
@@ -161,6 +173,9 @@
             bottom: rem(130);
             height: 10vh;
           }
+          @media (max-width: 568px) {
+            display: none;
+          }
         }
 
         @media (max-width: 1800px) {
@@ -177,6 +192,12 @@
 
         @media (max-width: 768px) {
           padding-top: rem(25);
+        }
+
+        @media (max-width: 568px) {
+          height: max-content;
+          overflow-x: hidden;
+          overflow-y: hidden;
         }
 
         &__introduction {
@@ -344,6 +365,7 @@
 
   @media (max-width: 568px) {
     margin-top: rem(35);
+    margin-bottom: rem(35);
   }
 }
 

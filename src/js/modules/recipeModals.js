@@ -32,6 +32,7 @@ export const recipeModals = () => {
   const openFullSizeModal = (evt) => {
     evt.preventDefault();
     fullsizeModal.classList.remove('hidden');
+    fullsizeModal.scrollTop = 0;
 
     document.body.classList.add('lock');
 
