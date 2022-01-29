@@ -8,25 +8,21 @@ import {ageLimitModal} from './modules/ageLimitModal.js';
 import {recipeModals} from './modules/recipeModals.js';
 import {mobileScripts} from './modules/mobileScripts.js';
 
-const spotlight = document.querySelector('.hero-block__spotlight');
+document.body.classList.add('lock');
 
-let spotlightSize = 'transparent 160px, rgba(168, 15, 50, 1) 200px)';
+const btnNoAgeLimitMain = document.querySelector('.age-limit-main__no');
+const btnYesAgeLimitMain = document.querySelector('.age-limit-main__yes');
+const ageLimitModalMain = document.querySelector('.hero-block__age-limit');
 
-window.addEventListener('mousemove', (e) => updateSpotlight(e));
-
-window.addEventListener('mousedown', (e) => {
-  spotlightSize = 'transparent 130px, rgba(168, 15, 50, 0.95) 150px)';
-  updateSpotlight(e);
+btnNoAgeLimitMain.addEventListener('click', () => {
+  window.close();
 });
 
-window.addEventListener('mouseup', (e) => {
-  spotlightSize = 'transparent 160px, rgba(168, 15, 50, 0.85) 200px)';
-  updateSpotlight(e);
+btnYesAgeLimitMain.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  document.body.classList.remove('lock');
+  ageLimitModalMain.classList.add('hidden');
 });
-
-function updateSpotlight(e) {
-  spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
-}
 
 mobileScripts();
 
@@ -68,7 +64,7 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
   loop: false,
   slidesPerView: 3,
   watchOverflow: true,
-  allowTouchMove: true,
+  allowTouchMove: false,
   slidesPerGroup: 3,
 
   // If we need pagination

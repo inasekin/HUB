@@ -12,4 +12,4 @@ export const ageLimitModal = () => {
     evt.preventDefault();
     ageLimitModal.classList.add('hidden');
   });
-}
+};
