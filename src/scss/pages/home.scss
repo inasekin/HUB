@@ -1,6 +1,7 @@
 .hero-block {
   width: 100%;
   background-image: url(../img/hero-block.png);
+  cursor: none;
   background-repeat: no-repeat;
   background-size: cover;
   transition:all 3s ease;
@@ -19,6 +20,18 @@
   @media (max-width: 568px) {
     padding-bottom: rem(47);
     height: rem(578);
+  }
+
+  &__spotlight {
+      position: absolute;
+    top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: radial-gradient(
+          circle,
+          transparent 160px,
+          rgba(168, 15, 50, 1.0) 200px
+      );
   }
 
   &__mobile {

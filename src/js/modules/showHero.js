@@ -38,12 +38,12 @@ export const csaHead = (arg) => {
 
 export const preload = (images, callback) => {
   if (images.length) {
-    let image = new Image();
+    const image = new Image();
     image.onload = image.onerror = function() {
       preload(images, callback);
-    }
+    };
     image.src = images.pop();
   } else {
     callback();
   }
-}
+};
