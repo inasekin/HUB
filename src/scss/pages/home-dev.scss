@@ -1360,23 +1360,34 @@
       overflow: hidden;
       height: 0;
     }
-    .btn-card-text-show:hover ~ .hide-block {
+    @media (min-width: 568px) {
+      .btn-card-text-show:hover ~ .hide-block {
+        opacity: 1;
+        transition: 1s;
+        height: rem(320);
+        @media (max-width: 568px) {
+          opacity: 1;
+          transition: all 0.05s;
+          height: rem(190);
+        }
+        @media (max-width: 368px) {
+          height: rem(170);
+        }
+      }
+    }
+    .hide-block.active-block {
       opacity: 1;
       transition: 1s;
       height: rem(320);
+
       @media (max-width: 568px) {
         opacity: 1;
-        transition: all 0.05s;
-        height: rem(190);
+        transition: all 1s;
+        height: 100%;
       }
       @media (max-width: 368px) {
-        height: rem(170);
+        height: 100%;
       }
-    }
-    .hide-block.active {
-      opacity: 1;
-      transition: 1s;
-      height: rem(340);
     }
 
     p {

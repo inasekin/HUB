@@ -12,6 +12,20 @@
   }
 
   .recipe-article {
+    &__btn-back {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
     &__content {
       background-color: $mainColor;
       height: 100%;
