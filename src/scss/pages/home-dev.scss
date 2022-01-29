@@ -1222,7 +1222,7 @@
     .btn-card-text-show:hover ~ .hide-block {
       opacity: 1;
       transition: 1s;
-      height: rem(260);
+      height: rem(320);
       @media (max-width: 568px) {
         opacity: 1;
         transition: all 0.05s;
@@ -1232,11 +1232,10 @@
         height: rem(170);
       }
     }
-
     .hide-block.active {
       opacity: 1;
       transition: 1s;
-      height: rem(260);
+      height: rem(340);
     }
 
     p {
