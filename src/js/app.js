@@ -1,11 +1,31 @@
-import * as flsFunctions from "./modules/functions.js";
-import {faqFunction} from "./modules/faq.js";
-import {preload, csaHead, images} from "./modules/showHero.js";
+import * as flsFunctions from './modules/functions.js';
+import {faqFunction} from './modules/faq.js';
+import {preload, csaHead, images} from './modules/showHero.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
-import {reasonModal} from "./modules/reasonModal.js";
-import {burgerOpen, quit} from "./modules/burgerMenu.js";
-import {ageLimitModal} from "./modules/ageLimitModal.js";
-import {recipeModals} from "./modules/recipeModals.js";
+import {reasonModal} from './modules/reasonModal.js';
+import {burgerOpen, quit} from './modules/burgerMenu.js';
+import {ageLimitModal} from './modules/ageLimitModal.js';
+import {recipeModals} from './modules/recipeModals.js';
+
+const spotlight = document.querySelector('.hero-block__spotlight');
+
+let spotlightSize = 'transparent 160px, rgba(168, 15, 50, 1) 200px)';
+
+window.addEventListener('mousemove', (e) => updateSpotlight(e));
+
+window.addEventListener('mousedown', (e) => {
+  spotlightSize = 'transparent 130px, rgba(168, 15, 50, 0.95) 150px)';
+  updateSpotlight(e);
+});
+
+window.addEventListener('mouseup', (e) => {
+  spotlightSize = 'transparent 160px, rgba(168, 15, 50, 0.85) 200px)';
+  updateSpotlight(e);
+});
+
+function updateSpotlight(e) {
+  spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
+}
 
 faqFunction();
 

@@ -21,11 +21,11 @@
       animation: scroll-article linear 60s infinite;
 
       @media (max-width: 1800px) {
-        height: 40vh;
+        height: 50vh;
       }
 
       @media (max-width: 1440px) {
-        height: rem(400);
+        height: rem(500);
         animation: none;
         -ms-background-position-y: unset;
         background-position-y: unset;
@@ -117,7 +117,7 @@
       }
 
       .article-content {
-        height: rem(450);
+        height: 90%;
         overflow-x: hidden;
         overflow-y: scroll;
         scrollbar-color: #a3012d #e2d1d6; /* «цвет ползунка» «цвет полосы скроллбара» */
@@ -152,7 +152,7 @@
           height: 100px;
           position: absolute;
           background: linear-gradient(180deg, rgba(255, 255, 255, 0) 57.31%, #ffffff 71.64%);
-          bottom: 15vh;
+          bottom: 8%;
           mix-blend-mode: normal;
           @media (max-width: 1440px) {
             bottom: 12vh;
@@ -164,7 +164,7 @@
         }
 
         @media (max-width: 1800px) {
-          height: rem(400);
+          height: 90%;
         }
 
         @media (max-width: 1500px) {
@@ -328,10 +328,10 @@
 }
 
 #closeFullSizeModal {
-  margin-top: rem(100);
+  margin-top: 10px;
 
   @media (max-width: 1440px) {
-    margin-top: rem(70);
+    margin-top: 50px;
   }
 
   @media (max-width: 768px) {

@@ -149,6 +149,8 @@
   &__nav {
     padding-top: rem(50);
     text-align: right;
+    position: relative;
+    z-index: 100;
   }
 
   &__nav-menu {
@@ -164,6 +166,10 @@
 
   &__nav-item a {
     color: #000;
+  }
+
+  &__nav-item:hover {
+    cursor: pointer;
   }
 
   &__nav-item::last-child {
