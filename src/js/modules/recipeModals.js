@@ -22,6 +22,7 @@ export const recipeModals = () => {
   const introductionEl = document.querySelector('.article-content__introduction');
   const articleContentWrapper = document.querySelector('.article-content__wrapper');
   const articleContentIllustrations = document.querySelector('.article-content__illustrations');
+  const articleBtnBack = document.querySelector('.recipe-article__btn-back');
 
   for (let i = 0; i < cardTextShow.length; i++) {
     cardTextShow[i].addEventListener('mouseover', () => {
@@ -32,6 +33,7 @@ export const recipeModals = () => {
   const openFullSizeModal = (evt) => {
     evt.preventDefault();
     fullsizeModal.classList.remove('hidden');
+    fullsizeModal.scrollTop = 0;
 
     document.body.classList.add('lock');
 
@@ -126,4 +128,5 @@ export const recipeModals = () => {
   }
 
   closeFullSizeModalEl.addEventListener('click', closeFullSizeModal);
+  articleBtnBack.addEventListener('click', closeFullSizeModal);
 };

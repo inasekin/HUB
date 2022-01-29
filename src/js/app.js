@@ -6,6 +6,7 @@ import {reasonModal} from './modules/reasonModal.js';
 import {burgerOpen, quit} from './modules/burgerMenu.js';
 import {ageLimitModal} from './modules/ageLimitModal.js';
 import {recipeModals} from './modules/recipeModals.js';
+import {mobileScripts} from './modules/mobileScripts.js';
 
 const spotlight = document.querySelector('.hero-block__spotlight');
 
@@ -26,6 +27,8 @@ window.addEventListener('mouseup', (e) => {
 function updateSpotlight(e) {
   spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
 }
+
+mobileScripts();
 
 faqFunction();
 

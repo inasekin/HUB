@@ -507,6 +507,8 @@
           padding-bottom: 20px;
           font-size: rem(12);
           line-height: rem(20);
+          position: relative;
+          z-index: 100;
         }
       }
 
