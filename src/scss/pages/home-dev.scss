@@ -1218,6 +1218,12 @@
       transition: 1s;
       overflow: hidden;
       height: 0;
+      p {
+        @media (max-width: 768px) {
+          overflow: hidden;
+          height: rem(110);
+        }
+      }
     }
     .btn-card-text-show:hover ~ .hide-block {
       opacity: 1;
