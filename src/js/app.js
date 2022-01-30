@@ -1,6 +1,6 @@
 import * as flsFunctions from './modules/functions.js';
 import {faqFunction} from './modules/faq.js';
-import {preload, csaHead, images} from './modules/showHero.js';
+import {showHero, preload, images, csaHead} from './modules/showHero.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import {reasonModal} from './modules/reasonModal.js';
 import {burgerOpen, quit} from './modules/burgerMenu.js';
@@ -23,6 +23,8 @@ btnYesAgeLimitMain.addEventListener('click', (evt) => {
   document.body.classList.remove('lock');
   ageLimitModalMain.classList.add('hidden');
 });
+
+showHero();
 
 mobileScripts();
 

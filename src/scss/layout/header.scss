@@ -12,6 +12,8 @@
         display: flex;
         justify-content: flex-end;
         padding-top: rem(50);
+        position: relative;
+        z-index: 1000;
 
         @media (max-width: 768px) {
           justify-content: flex-start;

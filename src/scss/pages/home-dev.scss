@@ -150,7 +150,7 @@
     padding-top: rem(50);
     text-align: right;
     position: relative;
-    z-index: 100;
+    z-index: 10000;
   }
 
   &__nav-menu {
@@ -166,6 +166,10 @@
 
   &__nav-item a {
     color: #000;
+    transition: all .3s;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__nav-item:hover {
@@ -1366,25 +1370,23 @@
         }
       }
     }
-    @media (min-width: 568px) {
-      .btn-card-text-show:hover ~ .hide-block {
+    .btn-card-text-show:hover ~ .hide-block {
+      opacity: 1;
+      transition: 1s;
+      height: rem(320);
+      @media (max-width: 568px) {
         opacity: 1;
-        transition: 1s;
-        height: rem(320);
-        @media (max-width: 568px) {
-          opacity: 1;
-          transition: all 0.05s;
-          height: rem(190);
-        }
-        @media (max-width: 368px) {
-          height: rem(170);
-        }
+        transition: all 0.05s;
+        height: rem(190);
+      }
+      @media (max-width: 368px) {
+        height: rem(170);
       }
     }
     .hide-block.active-block {
       opacity: 1;
       transition: 1s;
-      height: rem(320);
+      height: rem(340);
 
       @media (max-width: 568px) {
         opacity: 1;

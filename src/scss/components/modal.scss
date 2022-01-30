@@ -78,6 +78,10 @@
   svg {
     stroke: #fff;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .slider-navigation__prev {
@@ -85,6 +89,10 @@
   svg {
     stroke: #fff;
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 

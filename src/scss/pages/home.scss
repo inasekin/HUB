@@ -1,17 +1,11 @@
 .hero-block {
   width: 100%;
-  background-image: url(../img/hero-block.png);
-  cursor: default;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 3s ease;
-  -webkit-transition: all 3s ease;
-  -moz-transition: all 3s ease;
-  -o-transition: all 3s ease;
-  opacity: 1;
-  z-index: -2;
-  animation: scroll linear 60s infinite;
+  height: 100%;
   padding-bottom: rem(154);
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (max-width: 768px) {
     padding-bottom: rem(109);
@@ -20,6 +14,56 @@
   @media (max-width: 568px) {
     padding-bottom: rem(47);
     height: rem(578);
+  }
+
+  #bg-image {
+    height: 100vh;
+    width: 100vw;
+    /*make the background responsive*/
+    object-fit: cover;
+    /* under the circle div*/
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media (max-width: 768px) {
+      animation: scroll linear 60s infinite;
+    }
+  }
+
+  .bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 3s ease;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+  }
+
+  #circle {
+    height: 200px;
+    width: 200px;
+    /* make the the div circle */
+    border-radius: 50%;
+    /* important using relative for using top and left in javascript */
+    position: relative;
+    /* change the url with the link of image you want */
+    /*center the background */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* TRICK: making the background responsive*/
+    background-size: cover;
+    /* TRICK: the MAGIC is HERE make the image fixed, so is not moving  */
+    background-attachment: fixed;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+      animation: scroll linear 60s infinite;
+    }
+
+    @media (max-width: 568px) {
+      display: none;
+    }
   }
 
   &__age-limit {
@@ -32,6 +76,10 @@
     top: 0;
     animation: scroll linear 40s infinite;
     z-index: 10000;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     .age-limit-main {
       &__modal {
@@ -49,6 +97,7 @@
         }
         @media (max-width: 568px) {
           height: 100%;
+          margin: rem(58) auto 0 auto;
         }
       }
       &__notification {
@@ -162,9 +211,12 @@
   }
 
   &__text {
-    max-width: rem(444);
-    margin-bottom: rem(38);
-    margin-left: rem(8);
+    position: relative;
+    z-index: 1000;
+
+    @media (max-width: 1440px) {
+      bottom: 10vh;
+    }
 
     @media (max-width: 1024px) {
       max-width: rem(350);
@@ -173,6 +225,7 @@
     @media (max-width: 768px) {
       margin-left: rem(55);
       margin-bottom: rem(30);
+      bottom: unset;
     }
 
     @media (max-width: 620px) {

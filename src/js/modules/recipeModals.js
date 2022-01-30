@@ -26,7 +26,7 @@ export const recipeModals = () => {
 
   for (let i = 0; i < cardTextShow.length; i++) {
     cardTextShow[i].addEventListener('mouseover', () => {
-      hiddenTextBlock[i].classList.add('active');
+      hiddenTextBlock[i].classList.add('active-block');
     });
   }
 
