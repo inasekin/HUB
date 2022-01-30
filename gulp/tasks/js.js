@@ -10,7 +10,12 @@ export const js = () => {
 		)
 		.pipe(webpack({
 			mode: app.isBuild ? 'production' : 'development',
-			output: {
+      performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+      },
+      output: {
 				filename: 'app.min.js',
 			}
 		}))

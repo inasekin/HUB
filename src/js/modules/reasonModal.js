@@ -5,7 +5,6 @@ export function reasonModal() {
   const btnsOpenModal = document.querySelectorAll('.reason-modal');
   const openReasonTextBtns = document.querySelectorAll('.open-reason-text');
   const reasonCardsTextHidden = document.querySelectorAll('.reason-card__hidden');
-  const reasonCardBtnContainer = document.querySelectorAll('.reason-card__btn');
   const reasonBlockCard = document.querySelectorAll('.reasons-block__card');
   const bodyEl = document.body;
 
