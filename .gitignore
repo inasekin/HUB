@@ -14,6 +14,7 @@ package-lock.json
 
 # Собранные файлы
 /dist
+HUB.zip
 
 # Версия редакции
 /gulp/version.json
