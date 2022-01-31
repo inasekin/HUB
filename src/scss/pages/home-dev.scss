@@ -848,6 +848,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: rem(50);
+  background-color: #fff;
 
   @media (max-width: 768px) {
     background-image: unset;
@@ -1442,7 +1443,7 @@
   position: fixed;
   right: 5%;
   bottom: 5%;
-  z-index: 999;
+  z-index: 1002;
   @media (max-width: 568px) {
     height: rem(45);
     width: rem(100);

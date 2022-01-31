@@ -4,7 +4,7 @@
   padding-bottom: rem(154);
 
   &:hover {
-    cursor: pointer;
+    cursor: none;
   }
 
   @media (max-width: 768px) {
@@ -45,8 +45,10 @@
     width: 200px;
     /* make the the div circle */
     border-radius: 50%;
-    /* important using relative for using top and left in javascript */
-    position: relative;
+    ///* important using relative for using top and left in javascript */
+    position: absolute;
+    left: 0;
+    right: 0;
     /* change the url with the link of image you want */
     /*center the background */
     background-position: center;
@@ -576,6 +578,10 @@
                 line-height: unset;
                 padding-top: 8px;
                 padding-bottom: 25px;
+              }
+
+              @media (min-width: 1920px) {
+                padding-top: 5px;
               }
 
               @media (max-width: 1024px) {

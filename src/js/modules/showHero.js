@@ -1,15 +1,36 @@
 const heroBlockEl = document.querySelector('#bg-image');
 const circleImage = document.querySelector('#circle');
-const speciaListBlock = document.querySelector('.specialist-block');
 
 export const showHero = () => {
-  const circle = document.getElementById('circle');
 
-  document.addEventListener('mousemove', (e) => {
-    // make the image move relative to the mouse (make sure that in css you applied position: relative; to the div)
-    circle.style.left = `${e.clientX - 400}px`;
-    circle.style.top = `${e.clientY - 350}px`;
-  });
+  const boxElem = document.querySelector('.hero-block');
+  const pointerElem = document.getElementById('circle');
+
+  function onMouseMove(event) {
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+    const crd = boxElem.getBoundingClientRect();
+    const activePointer = crd.left <= mouseX && mouseX <= crd.right && crd.top <= mouseY && mouseY <= crd.bottom;
+
+    requestAnimationFrame(() => {
+      if (activePointer) {
+        pointerElem.classList.remove('box-pointer-hidden');
+        pointerElem.style.left = `${Math.floor(mouseX) - 100 }px`;
+        pointerElem.style.top = `${Math.floor(mouseY) - 100 }px`;
+      } else {
+        pointerElem.classList.add('box-pointer-hidden');
+      }
+    });
+  }
+
+  function disablePointer() {
+    requestAnimationFrame(() => {
+      pointerElem.classList.add('box-pointer-hidden');
+    });
+  }
+
+  boxElem.addEventListener('mousemove', onMouseMove, false);
+  boxElem.addEventListener('mouseleave', disablePointer, false);
   circleImage.style.border = '2px solid #FE9D2B';
 };
 
