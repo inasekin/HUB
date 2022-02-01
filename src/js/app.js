@@ -2,7 +2,7 @@ import * as flsFunctions from './modules/functions.js';
 import {faqFunction} from './modules/faq.js';
 import {showHero, preload, images, csaHead} from './modules/showHero.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
-import {reasonModal} from './modules/reasonModal.js';
+import {openModalFunction, reasonModal} from './modules/reasonModal.js';
 import {burgerOpen, quit} from './modules/burgerMenu.js';
 import {ageLimitModal} from './modules/ageLimitModal.js';
 import {recipeModals} from './modules/recipeModals.js';
@@ -79,21 +79,6 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
   navigation: {
     nextEl: '.slider__button-next',
     prevEl: '.slider__button-prev',
-  },
-});
-
-const swiperModalReasons = new Swiper('.modal-reason__slider', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
-  slidesPerView: 1,
-  watchOverflow: true,
-  allowTouchMove: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.slider-navigation__next',
-    prevEl: '.slider-navigation__prev',
   },
 });
 
