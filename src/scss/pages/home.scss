@@ -7,6 +7,14 @@
     cursor: none;
   }
 
+  &.active-hover:hover {
+    cursor: pointer !important;
+  }
+
+  &.active-hover #circle {
+    display: none;
+  }
+
   @media (max-width: 768px) {
     padding-bottom: rem(109);
   }
@@ -43,6 +51,7 @@
   #circle {
     height: 200px;
     width: 200px;
+    display: block;
     /* make the the div circle */
     border-radius: 50%;
     ///* important using relative for using top and left in javascript */
@@ -186,7 +195,7 @@
   }
 
   &__content {
-    margin-top: rem(160);
+    margin-top: rem(260);
 
     @media (max-width: 768px) {
       margin-top: rem(300);

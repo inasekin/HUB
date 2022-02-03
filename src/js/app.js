@@ -2,7 +2,7 @@ import * as flsFunctions from './modules/functions.js';
 import {faqFunction} from './modules/faq.js';
 import {showHero, preload, images, csaHead} from './modules/showHero.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
-import {openModalFunction, reasonModal} from './modules/reasonModal.js';
+import {reasonModal} from './modules/reasonModal.js';
 import {burgerOpen, quit} from './modules/burgerMenu.js';
 import {ageLimitModal} from './modules/ageLimitModal.js';
 import {recipeModals} from './modules/recipeModals.js';
@@ -24,8 +24,6 @@ btnYesAgeLimitMain.addEventListener('click', (evt) => {
   ageLimitModalMain.classList.add('hidden');
 });
 
-showHero();
-
 mobileScripts();
 
 faqFunction();
@@ -36,19 +34,6 @@ recipeModals();
 
 const mobileMenu = document.querySelector('.menu__burger');
 const mobileMenuQuit = document.querySelector('.menu__quit');
-// const heroBlockText = document.querySelector('.hero-block__text');
-// const heroBlock = document.querySelector('.hero-block');
-// const heroBlockTitle = document.querySelector('.hero-block__title');
-
-// setInterval(() => {
-//   if (heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-2.png");' || heroBlock.attributes[1].nodeValue === 'background-image: url("./img/hero-block-mobile-3.png");') {
-//     heroBlockText.classList.add('hidden');
-//     heroBlockTitle.classList.add('mt-100');
-//   } else {
-//     heroBlockText.classList.remove('hidden');
-//     heroBlockTitle.classList.remove('mt-100');
-//   }
-// }, 5500);
 
 mobileMenu.addEventListener('click', burgerOpen);
 mobileMenuQuit.addEventListener('click', quit);
@@ -56,6 +41,10 @@ mobileMenuQuit.addEventListener('click', quit);
 preload(images.slice(0), () => {
   requestAnimationFrame(csaHead);
 });
+
+// preload(images.slice(0), () => {
+//   requestAnimationFrame(csaHead);
+// });
 
 // configure Swiper to use modules
 Swiper.use([Navigation, Pagination]);
