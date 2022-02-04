@@ -48,11 +48,13 @@ setInterval(() => {
     boxElem.addEventListener('mousemove', onMouseMove, false);
     boxElem.addEventListener('mouseleave', disablePointer, false);
     circleImage.style.border = '2px solid #FE9D2B';
+    circleImage.classList.remove('not-active');
   } else {
     boxElem.classList.add('active-hover');
     boxElem.removeEventListener('mousemove', onMouseMove, false);
     boxElem.removeEventListener('mouseleave', disablePointer, false);
     circleImage.style.border = '2px solid #FE9D2B';
+    circleImage.classList.add('not-active');
   }
 }, 500);
 
@@ -60,26 +62,53 @@ export const csaHead = (arg) => {
   if(arg - timeStamp > 5000) {
     timeStamp = arg;
     if (index === 1) {
-      heroBlockEl.style.backgroundImage = `url(${images[1]})`;
-      circleImage.style.backgroundImage = `url(${images[0]})`;
-      index--;
-    } else if (index === 0) {
-      setTimeout(() =>  {
-        heroBlockEl.style.backgroundImage = `url(${images[0]})`;
-        circleImage.style.backgroundImage = `url(${images[1]})`;
-        index = 2;
+      setTimeout(() => {
+        heroBlockEl.style.backgroundImage = `url(${images[1]})`;
+        setTimeout(() => {
+          index--;
+        }, 5000);
       }, 5000);
-    } else if (index === 2) {
-      setTimeout(() =>  {
-        heroBlockEl.style.backgroundImage = `url(${images[2]})`;
-        circleImage.style.backgroundImage = `url(${images[1]})`;
-        index = 3;
-      }, 5000);
-    } else if (index === 3) {
+    }
+
+    if (index === 0) {
       heroBlockEl.style.backgroundImage = `url(${images[0]})`;
       circleImage.style.backgroundImage = `url(${images[2]})`;
-      index = 1;
+      setTimeout(() => {
+        index = 2;
+      }, 5000);
     }
+
+    if (index === 2) {
+      heroBlockEl.style.backgroundImage = `url(${images[2]})`;
+      circleImage.style.backgroundImage = `url(${images[2]})`;
+      index = 3;
+    }
+    setTimeout(() => {
+      heroBlockEl.style.backgroundImage = `url(${images[0]})`;
+      circleImage.style.backgroundImage = `url(${images[1]})`;
+      setTimeout(() => {
+        index = 1;
+      }, 5000);
+    }, 25000);
+    //   setTimeout(() =>  {
+
+    //     circleImage.style.backgroundImage = `url(${images[2]})`;
+    //     index = 2;
+    //   }, 5000);
+    // }
+    // if (index === 2) {
+    //   setTimeout(() =>  {
+
+    //     index = 3;
+    //   }, 5000);
+    // }
+    // if (index === 3) {
+    //   setTimeout(() =>  {
+    //     heroBlockEl.style.backgroundImage = `url(${images[1]})`;
+    //     circleImage.style.backgroundImage = `url(${images[1]})`;
+    //     index = 1;
+    //   }, 5000);
+    // }
   }
   requestAnimationFrame(csaHead);
 };
