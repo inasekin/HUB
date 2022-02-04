@@ -12,13 +12,13 @@ body::-webkit-scrollbar {
     background: transparent;
 }
 body::-webkit-scrollbar-thumb {
-    background: #a3012d;
+    background: $redColor;
     border-radius: 40px;
     transition: all 0.3s;
 }
 html,
 body {
-    scrollbar-color: #e2d1d6 #e2d1d6; /* «цвет ползунка» «цвет полосы скроллбара» */
-    scrollbar-width: auto; /* толщина */
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: $redColor $secondRedColor;
     overflow: overlay;
 }
