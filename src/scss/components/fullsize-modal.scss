@@ -5,7 +5,10 @@
   width: 100%;
   height: 100%;
   z-index: 100000;
-  overflow: scroll;
+  scrollbar-color: #a3012d #e2d1d6; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto; /* толщина */
+  overflow-y: scroll;
+  overflow-x: hidden;
   background: #fff;
 
   .recipe-article {
@@ -297,7 +300,6 @@
     }
   }
 }
-
 .fullsize-modal {
   overflow-y: scroll !important;
 }
